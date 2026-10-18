@@ -1,0 +1,68 @@
+{
+  "$comment": "Inclusive master-pixel boxes. The upper region includes hair and hands; legs remain fixed.",
+  "image": "bow_base.png",
+  "size": [
+    106,
+    192
+  ],
+  "parts": {
+    "head": {
+      "box": [
+        18,
+        16,
+        61,
+        69
+      ],
+      "note": "Head including ears; excludes the long ponytail."
+    },
+    "face": {
+      "box": [
+        32,
+        56,
+        57,
+        65
+      ],
+      "note": "Closed eyes retained."
+    },
+    "upper": {
+      "box": [
+        0,
+        0,
+        105,
+        119
+      ],
+      "note": "Head, torso and hands move most; skirt bands follow with smaller lifts."
+    },
+    "skirt-middle": {
+      "box": [
+        0,
+        120,
+        105,
+        147
+      ],
+      "note": "Middle skirt follows at two thirds of the upper-body lift."
+    },
+    "skirt-lower": {
+      "box": [
+        0,
+        148,
+        105,
+        167
+      ],
+      "note": "Hem follows at one third of the upper-body lift; feet stay planted."
+    },
+    "legs": {
+      "box": [
+        30,
+        168,
+        51,
+        191
+      ],
+      "note": "Fixed legs and shoes, inclusive bounds."
+    }
+  },
+  "anchor": {
+    "foot-row": 191,
+    "foot-center-x": 40.5
+  }
+}

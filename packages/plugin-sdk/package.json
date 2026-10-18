@@ -1,0 +1,29 @@
+{
+  "name": "@deskpet/plugin-sdk",
+  "version": "0.0.0",
+  "private": true,
+  "description": "definePlugin, PluginContext 타입, 테스트 하네스",
+  "type": "module",
+  "types": "./src/index.ts",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./dist/index.js"
+    },
+    "./testing": {
+      "types": "./src/testing/index.ts",
+      "default": "./dist/testing/index.js"
+    },
+    "./v2": {
+      "types": "./src/v2/index.ts",
+      "default": "./dist/v2/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@deskpet/core": "workspace:*"
+  }
+}

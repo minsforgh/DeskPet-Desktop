@@ -1,0 +1,76 @@
+{
+  "id": "placeholder",
+  "name": "Placeholder",
+  "apiVersion": "1",
+  "cellSize": [
+    256,
+    256
+  ],
+  "anchor": [
+    128,
+    240
+  ],
+  "scale": 1,
+  "states": {
+    "idle": {
+      "sheet": "sheets/idle.png",
+      "frames": 8,
+      "fps": 8,
+      "loop": true
+    },
+    "blink": {
+      "sheet": "sheets/blink.png",
+      "frames": 4,
+      "fps": 12,
+      "loop": false,
+      "next": "idle"
+    },
+    "walk": {
+      "sheet": "sheets/walk.png",
+      "frames": 6,
+      "fps": 10,
+      "loop": true
+    },
+    "sleep": {
+      "sheet": "sheets/sleep.png",
+      "frames": 4,
+      "fps": 3,
+      "loop": true
+    },
+    "happy": {
+      "sheet": "sheets/happy.png",
+      "frames": 6,
+      "fps": 10,
+      "loop": false,
+      "next": "idle"
+    },
+    "surprised": {
+      "sheet": "sheets/surprised.png",
+      "frames": 5,
+      "fps": 12,
+      "loop": false,
+      "next": "idle"
+    },
+    "worried": {
+      "sheet": "sheets/worried.png",
+      "frames": 6,
+      "fps": 8,
+      "loop": true
+    },
+    "talk": {
+      "sheet": "sheets/talk.png",
+      "frames": 4,
+      "fps": 8,
+      "loop": true
+    },
+    "drag": {
+      "sheet": "sheets/drag.png",
+      "frames": 4,
+      "fps": 8,
+      "loop": true
+    }
+  },
+  "fallbacks": {
+    "celebrate": "happy"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "id": "jungle",
+  "name": "Jungle",
+  "version": "0.0.0",
+  "apiVersion": "2",
+  "entry": "dist/index.js",
+  "description": "Check the Jungle LMS attendance state through a user-logged-in checker window (read-only).",
+  "permissions": {
+    "network": ["jungle-lms.krafton.com", "accounts.google.com"],
+    "windows": ["lms-checker"],
+    "secrets": false,
+    "shell": false
+  },
+  "contributes": {
+    "actions": ["jungle.show-login", "jungle.check-now", "jungle.open-attendance"],
+    "badges": ["jungle.status"],
+    "trayItems": ["jungle.show-login", "jungle.check-now", "jungle.open-attendance"],
+    "lines": "lines.json"
+  }
+}

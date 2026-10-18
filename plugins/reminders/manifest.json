@@ -1,0 +1,10 @@
+{
+  "id": "reminders",
+  "name": "Reminders",
+  "version": "0.0.0",
+  "apiVersion": "2",
+  "entry": "dist/index.js",
+  "description": "Schedule recurring reminders and emit notification events.",
+  "permissions": {},
+  "contributes": { "lines": "lines.json" }
+}

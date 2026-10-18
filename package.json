@@ -1,0 +1,44 @@
+{
+  "name": "deskpet",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@12.9.1",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "pnpm -r run build",
+    "typecheck": "pnpm -r run typecheck",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:impact": "node scripts/impact-tests.ts",
+    "test:contract": "vitest run --mode contract",
+    "build:host": "pnpm --filter @deskpet/core --filter @deskpet/plugin-sdk --filter @deskpet/plugin-host --filter \"./plugins/*\" run build",
+    "test:e2e": "pnpm build:host && pnpm --filter @deskpet/cli build && pnpm --filter @deskpet/desktop build && vitest run --mode e2e",
+    "desktop:start": "pnpm build:host && pnpm --filter @deskpet/desktop build && pnpm --filter @deskpet/desktop start:dev",
+    "desktop:screenshot": "node apps/desktop/scripts/screenshot.mjs",
+    "deskpet": "node packages/cli/dist/index.js",
+    "usage": "node tools/usage/collect.mjs --text",
+    "sprites:placeholder": "pnpm --silent --filter @deskpet/sprite-pipeline build && pnpm --silent --filter @deskpet/sprite-pipeline generate",
+    "sprites:check": "pnpm --silent --filter @deskpet/sprite-pipeline build && node tools/sprite-pipeline/dist/check-cli.js",
+    "sprites:pixelize": "pnpm --silent --filter @deskpet/core build && pnpm --silent --filter @deskpet/sprite-pipeline build && node tools/sprite-pipeline/dist/pixelize-cli.js",
+    "sprites:retouch": "pnpm --silent --filter @deskpet/core build && pnpm --silent --filter @deskpet/sprite-pipeline build && node tools/sprite-pipeline/dist/retouch-cli.js",
+    "sprites:frames": "pnpm --silent --filter @deskpet/core build && pnpm --silent --filter @deskpet/sprite-pipeline build && node tools/sprite-pipeline/dist/frames-cli.js",
+    "sprites:pack": "pnpm --silent --filter @deskpet/core build && pnpm --silent --filter @deskpet/sprite-pipeline build && node tools/sprite-pipeline/dist/pack-cli.js",
+    "package": "pnpm build:host && pnpm --filter @deskpet/cli build && pnpm --filter @deskpet/desktop build && node scripts/package-bundle.mjs && electron-builder --config electron-builder.config.mjs --projectDir apps/desktop --win nsis --publish never && node scripts/package-verify.mjs",
+    "package:check": "node scripts/check-installer.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@types/node": "^26.6.4",
+    "electron": "44.5.1",
+    "electron-builder": "26.15.3",
+    "electron-vite": "5.0.0",
+    "eslint": "^10.12.0",
+    "typescript": "~6.0.3",
+    "typescript-eslint": "^8.71.0",
+    "vite": "^7.3.6",
+    "vitest": "^5.0.3"
+  }
+}

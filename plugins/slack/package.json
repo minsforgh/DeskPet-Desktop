@@ -1,0 +1,15 @@
+{
+  "name": "@deskpet/plugin-slack",
+  "version": "0.0.0",
+  "private": true,
+  "description": "slack 플러그인",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@deskpet/core": "workspace:*",
+    "@deskpet/plugin-sdk": "workspace:*"
+  }
+}

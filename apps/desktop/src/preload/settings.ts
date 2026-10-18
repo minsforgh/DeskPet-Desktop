@@ -1,0 +1,57 @@
+import { contextBridge, ipcRenderer } from "electron";
+import type { VoiceTemplates } from "@deskpet/core";
+
+contextBridge.exposeInMainWorld("settings", {
+  confirm: (message: string): boolean => {
+    const answer = ipcRenderer.sendSync("settings:confirm", message) as boolean | null;
+    return answer ?? window.confirm(message);
+  },
+  load: (): Promise<unknown> => ipcRenderer.invoke("settings:load") as Promise<unknown>,
+  saveGeneral: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:save-general", payload) as Promise<unknown>,
+  saveBadge: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:save-badge", payload) as Promise<unknown>,
+  saveBubble: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:save-bubble", payload) as Promise<unknown>,
+  saveDeveloperMode: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:save-developer-mode", payload) as Promise<unknown>,
+  saveLaunchAtLogin: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:save-launch-at-login", payload) as Promise<unknown>,
+  savePlugin: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:save-plugin", payload) as Promise<unknown>,
+  enableReminder: (): Promise<unknown> => ipcRenderer.invoke("settings:enable-reminder") as Promise<unknown>,
+  clearSecret: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:clear-secret", payload) as Promise<unknown>,
+  voiceLoad: (): Promise<unknown> => ipcRenderer.invoke("settings:voice-load") as Promise<unknown>,
+  voicePreview: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:voice-preview", payload) as Promise<unknown>,
+  voiceSend: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:voice-send", payload) as Promise<unknown>,
+  lineSend: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:line-send", payload) as Promise<unknown>,
+  lineSettingsLoad: (): Promise<unknown> => ipcRenderer.invoke("settings:line-settings-load") as Promise<unknown>,
+  lineOverridesSave: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:line-overrides-save", payload) as Promise<unknown>,
+  lineOverridesReset: (): Promise<unknown> => ipcRenderer.invoke("settings:line-overrides-reset") as Promise<unknown>,
+  lineReactionsSave: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:line-reactions-save", payload) as Promise<unknown>,
+  lineReactionsReset: (): Promise<unknown> => ipcRenderer.invoke("settings:line-reactions-reset") as Promise<unknown>,
+  interactionsLoad: (): Promise<unknown> => ipcRenderer.invoke("settings:interactions-load") as Promise<unknown>,
+  interactionsSave: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:interactions-save", payload) as Promise<unknown>,
+  interactionsTry: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:interactions-try", payload) as Promise<unknown>,
+  sequencesLoad: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:sequences-load", payload) as Promise<unknown>,
+  sequencesSave: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:sequences-save", payload) as Promise<unknown>,
+  reactionsLoad: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:reactions-load", payload) as Promise<unknown>,
+  reactionsSave: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:reactions-save", payload) as Promise<unknown>,
+  motionsLoad: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:motions-load", payload) as Promise<unknown>,
+  motionsSave: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:motions-save", payload) as Promise<unknown>,
+  behaviorLoad: (packId: unknown): Promise<unknown> => ipcRenderer.invoke("settings:behavior-load", packId) as Promise<unknown>,
+  behaviorSave: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:behavior-save", payload) as Promise<unknown>,
+  terrainLoad: (): Promise<unknown> => ipcRenderer.invoke("settings:terrain-load") as Promise<unknown>,
+  terrainSave: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:terrain-save", payload) as Promise<unknown>,
+  packsList: (): Promise<unknown> => ipcRenderer.invoke("settings:packs-list") as Promise<unknown>,
+  packSelect: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:pack-select", payload) as Promise<unknown>,
+  packDelete: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:pack-delete", payload) as Promise<unknown>,
+  packSaveVoice: (payload: { packId: string; voicePack: { version: 1; templates: VoiceTemplates } }): Promise<unknown> =>
+    ipcRenderer.invoke("settings:pack-save-voice", payload) as Promise<unknown>,
+  packSaveInteractions: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:pack-save-interactions", payload) as Promise<unknown>,
+  packInteractionsLoad: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:pack-interactions-load", payload) as Promise<unknown>,
+  packSaveMeta: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:pack-save-meta", payload) as Promise<unknown>,
+  packVoiceLoad: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:pack-voice-load", payload) as Promise<unknown>,
+  sheetPick: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:sheet-pick", payload) as Promise<unknown>,
+  sheetApply: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:sheet-apply", payload) as Promise<unknown>,
+  statePreview: (payload: unknown): Promise<unknown> => ipcRenderer.invoke("settings:state-preview", payload) as Promise<unknown>,
+  onGeneralChanged: (callback: (payload: unknown) => void) =>
+    ipcRenderer.on("settings:general-changed", (_event, payload: unknown) => callback(payload)),
+  setDirty: (dirty: boolean) => ipcRenderer.send("settings:dirty", dirty),
+  setReminderDirty: (count: number) => ipcRenderer.send("settings:reminder-dirty", count),
+  markReady: () => ipcRenderer.send("settings:ready"),
+});

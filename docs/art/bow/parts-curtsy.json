@@ -1,0 +1,68 @@
+{
+  "$comment": "Inclusive master-pixel boxes. The upper region includes hair and hands; legs remain fixed.",
+  "image": "curtsy_base.png",
+  "size": [
+    130,
+    192
+  ],
+  "parts": {
+    "head": {
+      "box": [
+        40,
+        8,
+        83,
+        61
+      ],
+      "note": "Head including ears; excludes the long ponytail."
+    },
+    "face": {
+      "box": [
+        50,
+        44,
+        73,
+        57
+      ],
+      "note": "Open blue eyes; mouth endpoints raised one master pixel."
+    },
+    "upper": {
+      "box": [
+        0,
+        0,
+        129,
+        107
+      ],
+      "note": "Head, torso and hands move most; skirt bands follow with smaller lifts."
+    },
+    "skirt-middle": {
+      "box": [
+        0,
+        108,
+        129,
+        147
+      ],
+      "note": "Middle skirt follows at two thirds of the upper-body lift."
+    },
+    "skirt-lower": {
+      "box": [
+        0,
+        148,
+        129,
+        171
+      ],
+      "note": "Hem follows at one third of the upper-body lift; feet stay planted."
+    },
+    "legs": {
+      "box": [
+        52,
+        172,
+        77,
+        191
+      ],
+      "note": "Fixed legs and shoes, inclusive bounds."
+    }
+  },
+  "anchor": {
+    "foot-row": 191,
+    "foot-center-x": 64.5
+  }
+}

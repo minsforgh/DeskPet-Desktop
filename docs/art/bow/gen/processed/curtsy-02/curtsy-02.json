@@ -1,0 +1,30 @@
+{
+  "width": 61,
+  "height": 96,
+  "colors": 16,
+  "palette": [
+    "#00001d",
+    "#0c102d",
+    "#181e3d",
+    "#1b2241",
+    "#28355e",
+    "#2a365c",
+    "#2b365d",
+    "#2d385e",
+    "#4e485e",
+    "#6d677a",
+    "#8f8ea5",
+    "#adacbd",
+    "#d3d2dc",
+    "#e2dbdf",
+    "#e7a185",
+    "#fbf9f6"
+  ],
+  "crop": {
+    "x": 40,
+    "y": 76,
+    "width": 933,
+    "height": 1471
+  },
+  "transparentPixels": 0
+}

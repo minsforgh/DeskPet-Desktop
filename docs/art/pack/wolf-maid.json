@@ -1,0 +1,21 @@
+{
+  "id": "wolf-maid",
+  "name": "늑대 메이드",
+  "cellSize": [130, 192],
+  "anchor": [65, 191],
+  "scale": 0.8,
+  "fallbacks": { "worried": "surprised", "celebrate": "happy" },
+  "states": {
+    "idle": { "frames": "../frames/out/idle", "offsetX": 24, "loop": true },
+    "blink": { "frames": "../frames/out/blink", "offsetX": 24, "loop": false, "next": "idle" },
+    "walk": { "frames": "../side/out/walk", "offsetX": 0, "loop": true, "facing": "right" },
+    "sleep": { "frames": "../frames/out/sleep", "offsetX": 24, "loop": true },
+    "happy": { "frames": "../frames/out/happy", "offsetX": 24, "loop": false, "next": "idle" },
+    "surprised": { "frames": "../frames/out/surprised", "offsetX": 24, "loop": false, "next": "idle" },
+    "worried": { "frames": "../frames/out/worried", "offsetX": 24, "loop": true },
+    "talk": { "frames": "../frames/out/talk", "offsetX": 24, "loop": true },
+    "drag": { "frames": "../frames/out/drag", "offsetX": 24, "loop": true },
+    "bow": { "frames": "../bow/out-bow/bow", "offsetX": 24, "loop": false, "next": "idle" },
+    "curtsy": { "frames": "../bow/out-curtsy/curtsy", "offsetX": 0, "loop": false, "next": "idle" }
+  }
+}

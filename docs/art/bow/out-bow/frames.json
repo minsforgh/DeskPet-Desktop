@@ -1,0 +1,48 @@
+{
+  "width": 106,
+  "height": 192,
+  "states": {
+    "bow": {
+      "fps": 8,
+      "frames": 9,
+      "list": [
+        {
+          "note": "1: Enter from the least-bent pose; upper body 12px above master, feet unchanged.",
+          "colors": 12
+        },
+        {
+          "note": "2: Lower into the greeting; upper body 8px above master, feet unchanged.",
+          "colors": 12
+        },
+        {
+          "note": "3: Lower into the greeting; upper body 3px above master, feet unchanged.",
+          "colors": 12
+        },
+        {
+          "note": "4: Hold the full greeting; upper body 0px above master, feet unchanged.",
+          "colors": 12
+        },
+        {
+          "note": "5: Hold the full greeting; upper body 0px above master, feet unchanged.",
+          "colors": 12
+        },
+        {
+          "note": "6: Hold the full greeting; upper body 0px above master, feet unchanged.",
+          "colors": 12
+        },
+        {
+          "note": "7: Recover toward idle; upper body 4px above master, feet unchanged.",
+          "colors": 12
+        },
+        {
+          "note": "8: Recover toward idle; upper body 9px above master, feet unchanged.",
+          "colors": 12
+        },
+        {
+          "note": "9: Recover toward idle; upper body 12px above master, feet unchanged.",
+          "colors": 12
+        }
+      ]
+    }
+  }
+}

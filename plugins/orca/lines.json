@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "lines": [
+    { "id": "orca.unavailable", "label": "Orca 상태 확인 불가", "kind": "alert", "variables": [], "variants": ["Orca 상태를 확인할 수 없어"] },
+    { "id": "orca.worker-succeeded", "label": "작업 완료", "kind": "done", "variables": ["task"], "variants": ["{task}이 끝났어"] },
+    { "id": "orca.worker-failed", "label": "작업 실패", "kind": "failed", "variables": ["task"], "variants": ["{task}에 실패했어"] },
+    { "id": "orca.worker-exited", "label": "작업 멈춤", "kind": "failed", "variables": ["task"], "variants": ["{task}이 멈춘 것 같아"] },
+    { "id": "orca.coordinator-waiting", "label": "조정자 대기", "kind": "waiting", "variables": ["task"], "variants": ["{task}에서 나를 기다려"] },
+    { "id": "orca.gate-pending", "label": "확인 필요", "kind": "waiting", "variables": ["task"], "variants": ["{task} 확인이 필요해"] },
+    { "id": "orca.escalation", "label": "문제 발생", "kind": "alert", "variables": ["task"], "variants": ["{task}에서 문제가 생겼어"] },
+    { "id": "orca.question", "label": "질문 도착", "kind": "waiting", "variables": ["task"], "variants": ["{task} 질문이 왔어"] },
+    { "id": "orca.gate-decided", "label": "결정 완료", "kind": "info", "variables": [], "variants": ["결정했어"] },
+    { "id": "orca.gate-already", "label": "이미 처리된 확인", "kind": "info", "variables": [], "variants": ["이미 처리된 확인이야"] },
+    { "id": "orca.gate-unknown", "label": "승인 결과 확인 불가", "kind": "info", "variables": [], "variants": ["승인 결과를 확인하지 못했어"] }
+  ]
+}

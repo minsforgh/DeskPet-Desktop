@@ -1,0 +1,33 @@
+{
+  "version": 1,
+  "items": [
+    {
+      "id": "pat",
+      "label": "쓰다듬기",
+      "mood": "happy",
+      "bubble": true,
+      "lines": [
+        "!!"
+      ]
+    },
+    {
+      "id": "talk",
+      "label": "말 걸기",
+      "mood": "neutral",
+      "bubble": true,
+      "lines": [
+        "부르셨어요?"
+      ]
+    },
+    {
+      "id": "scare",
+      "label": "놀래키기",
+      "mood": "surprised",
+      "bubble": true,
+      "lines": [
+        "꺄!"
+      ]
+    }
+  ],
+  "hidden": []
+}

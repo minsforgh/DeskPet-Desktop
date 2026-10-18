@@ -1,0 +1,122 @@
+{
+  "version": 1,
+  "lines": [
+    {
+      "id": "codex.done-task-result",
+      "label": "작업 완료",
+      "kind": "done",
+      "variables": [
+        "folder",
+        "task",
+        "result"
+      ],
+      "variants": [
+        "{folder}: {task} → {result}"
+      ]
+    },
+    {
+      "id": "codex.done-task",
+      "label": "작업 완료 · 시킨 일",
+      "kind": "done",
+      "variables": [
+        "folder",
+        "task"
+      ],
+      "variants": [
+        "{folder}: {task}"
+      ]
+    },
+    {
+      "id": "codex.done-result",
+      "label": "작업 완료 · 결과",
+      "kind": "done",
+      "variables": [
+        "folder",
+        "result"
+      ],
+      "variants": [
+        "{folder}: {result}"
+      ]
+    },
+    {
+      "id": "codex.done-default",
+      "label": "작업 완료",
+      "kind": "done",
+      "variables": [
+        "folder"
+      ],
+      "variants": [
+        "{folder} 작업이 끝났어요"
+      ]
+    },
+    {
+      "id": "codex.waiting-message",
+      "label": "입력 대기 · 메시지",
+      "kind": "waiting",
+      "variables": [
+        "folder",
+        "message"
+      ],
+      "variants": [
+        "{folder}: {message}"
+      ]
+    },
+    {
+      "id": "codex.waiting-default",
+      "label": "입력 대기 · 기본",
+      "kind": "waiting",
+      "variables": [
+        "folder"
+      ],
+      "variants": [
+        "{folder}이 입력을 기다려요"
+      ]
+    },
+    {
+      "id": "codex.failed-message",
+      "label": "실패 · 메시지",
+      "kind": "failed",
+      "variables": [
+        "folder",
+        "message"
+      ],
+      "variants": [
+        "{folder}: {message}"
+      ]
+    },
+    {
+      "id": "codex.failed-default",
+      "label": "실패 · 기본",
+      "kind": "failed",
+      "variables": [
+        "folder"
+      ],
+      "variants": [
+        "{folder}이 입력을 기다려요"
+      ]
+    },
+    {
+      "id": "codex.info-message",
+      "label": "알림 · 메시지",
+      "kind": "info",
+      "variables": [
+        "folder",
+        "message"
+      ],
+      "variants": [
+        "{folder}: {message}"
+      ]
+    },
+    {
+      "id": "codex.info-default",
+      "label": "알림 · 기본",
+      "kind": "info",
+      "variables": [
+        "folder"
+      ],
+      "variants": [
+        "{folder}이 입력을 기다려요"
+      ]
+    }
+  ]
+}

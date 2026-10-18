@@ -1,0 +1,103 @@
+{
+  "id": "wolf-maid",
+  "name": "메이드",
+  "apiVersion": "1",
+  "cellSize": [
+    130,
+    192
+  ],
+  "anchor": [
+    65,
+    191
+  ],
+  "scale": 0.8,
+  "states": {
+    "idle": {
+      "sheet": "sheets/idle.png",
+      "frames": 8,
+      "fps": 8,
+      "loop": true
+    },
+    "blink": {
+      "sheet": "sheets/blink.png",
+      "frames": 4,
+      "fps": 12,
+      "loop": false,
+      "next": "idle"
+    },
+    "walk": {
+      "sheet": "sheets/walk.png",
+      "frames": 6,
+      "fps": 10,
+      "loop": true,
+      "facing": "right"
+    },
+    "sleep": {
+      "sheet": "sheets/sleep.png",
+      "frames": 4,
+      "fps": 3,
+      "loop": true
+    },
+    "happy": {
+      "sheet": "sheets/happy.png",
+      "frames": 6,
+      "fps": 10,
+      "loop": false,
+      "next": "idle"
+    },
+    "surprised": {
+      "sheet": "sheets/surprised.png",
+      "frames": 5,
+      "fps": 12,
+      "loop": false,
+      "next": "idle"
+    },
+    "worried": {
+      "sheet": "sheets/worried.png",
+      "frames": 6,
+      "fps": 8,
+      "loop": true
+    },
+    "talk": {
+      "sheet": "sheets/talk.png",
+      "frames": 4,
+      "fps": 8,
+      "loop": true
+    },
+    "drag": {
+      "sheet": "sheets/drag.png",
+      "frames": 4,
+      "fps": 8,
+      "loop": true
+    },
+    "bow": {
+      "sheet": "sheets/bow.png",
+      "frames": 9,
+      "fps": 8,
+      "loop": false,
+      "next": "idle"
+    },
+    "curtsy": {
+      "sheet": "sheets/curtsy.png",
+      "frames": 10,
+      "fps": 8,
+      "loop": false,
+      "next": "idle"
+    }
+  },
+  "fallbacks": {
+    "worried": "surprised",
+    "celebrate": "happy"
+  },
+  "voice": "voice.json",
+  "meta": {
+    "author": "DeskPet 프로젝트",
+    "version": "0.1.0",
+    "license": "미정 - 공개 배포 전 권리 확인 필요",
+    "description": "늑대 귀 메이드. 콘셉트는 이미지 생성 AI, 앞모습 기준 픽셀은 사용자가 손봄, 프레임은 코드 편집. 자세한 출처는 CREDITS.md",
+    "createdWith": "이미지 생성 AI + sprite-pipeline"
+  },
+  "interactions": "interactions.json",
+  "reactions": "reactions.json",
+  "motions": "motions.json"
+}

@@ -1,0 +1,52 @@
+{
+  "width": 130,
+  "height": 192,
+  "states": {
+    "curtsy": {
+      "fps": 8,
+      "frames": 10,
+      "list": [
+        {
+          "note": "1: Enter from the least-bent pose; upper body 8px above master, feet unchanged.",
+          "colors": 13
+        },
+        {
+          "note": "2: Lower into the greeting; upper body 6px above master, feet unchanged.",
+          "colors": 13
+        },
+        {
+          "note": "3: Lower into the greeting; upper body 2px above master, feet unchanged.",
+          "colors": 13
+        },
+        {
+          "note": "4: Hold the full greeting; upper body 0px above master, feet unchanged.",
+          "colors": 13
+        },
+        {
+          "note": "5: Hold the full greeting; upper body 0px above master, feet unchanged.",
+          "colors": 13
+        },
+        {
+          "note": "6: Hold the full greeting; upper body 0px above master, feet unchanged.",
+          "colors": 13
+        },
+        {
+          "note": "7: Recover toward idle; upper body 1px above master, feet unchanged.",
+          "colors": 13
+        },
+        {
+          "note": "8: Recover toward idle; upper body 3px above master, feet unchanged.",
+          "colors": 13
+        },
+        {
+          "note": "9: Recover toward idle; upper body 6px above master, feet unchanged.",
+          "colors": 13
+        },
+        {
+          "note": "10: Recover toward idle; upper body 8px above master, feet unchanged.",
+          "colors": 13
+        }
+      ]
+    }
+  }
+}

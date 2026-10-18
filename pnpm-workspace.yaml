@@ -1,0 +1,9 @@
+packages:
+  - apps/*
+  - packages/*
+  - plugins/*
+  - tools/*
+allowBuilds:
+  electron: true
+  esbuild: true
+  electron-winstaller: false

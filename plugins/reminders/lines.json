@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "lines": [
+    { "id": "reminders.rule", "label": "규칙 알림", "kind": "reminder", "variables": ["message"], "variants": ["{message}"] }
+  ]
+}

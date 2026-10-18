@@ -1,0 +1,68 @@
+{
+  "width": 49,
+  "height": 96,
+  "colors": 12,
+  "transparentPixels": 2190,
+  "palette": [
+    {
+      "name": "outline",
+      "hex": "#151a2e",
+      "pixels": 398
+    },
+    {
+      "name": "dress-shadow",
+      "hex": "#232a44",
+      "pixels": 189
+    },
+    {
+      "name": "dress",
+      "hex": "#343d62",
+      "pixels": 129
+    },
+    {
+      "name": "hair-shadow",
+      "hex": "#928fa0",
+      "pixels": 20
+    },
+    {
+      "name": "hair-mid",
+      "hex": "#b6b4c1",
+      "pixels": 238
+    },
+    {
+      "name": "hair-light",
+      "hex": "#dcdbe4",
+      "pixels": 532
+    },
+    {
+      "name": "skin",
+      "hex": "#f3cdb1",
+      "pixels": 35
+    },
+    {
+      "name": "eye",
+      "hex": "#3a5fa6",
+      "pixels": 1
+    },
+    {
+      "name": "apron",
+      "hex": "#fcfaf7",
+      "pixels": 479
+    },
+    {
+      "name": "apron-shadow",
+      "hex": "#c9c6d2",
+      "pixels": 66
+    },
+    {
+      "name": "shoe",
+      "hex": "#30334b",
+      "pixels": 344
+    },
+    {
+      "name": "stocking",
+      "hex": "#635769",
+      "pixels": 83
+    }
+  ]
+}

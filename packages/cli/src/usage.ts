@@ -1,0 +1,30 @@
+/** One-page usage text for `deskpet --help` / `deskpet <command> --help` / `-h`. No I/O. */
+export function usageText(): string {
+  return [
+    "deskpet - DeskPet 앱 CLI",
+    "",
+    "사용법:",
+    "  deskpet event [옵션]      앱에 이벤트를 보냅니다.",
+    "  deskpet status [옵션]     앱 상태를 확인합니다.",
+    '  deskpet --help | -h      이 사용법을 출력합니다 (event, status 뒤에도 쓸 수 있습니다).',
+    "",
+    "event 옵션:",
+    "  --text <문자열>          알림에 표시할 문장",
+    "  --mood <문자열>          캐릭터 기분 (예: happy)",
+    "  --priority <문자열>      이벤트 우선순위",
+    "  --type <문자열>          이벤트 종류 (기본: notify)",
+    "  --source <문자열>        이벤트 출처 (기본: cli)",
+    "  --key <문자열>           이벤트 식별 키",
+    "  --ttl <밀리초>           이벤트 유지 시간 (양의 정수)",
+    "  --detail <문자열>        추가 상세 정보",
+    "  --voice <종류>           캐릭터 어투 종류 (done, waiting, failed, info, deadline, reminder, alert)",
+    "  --slot <이름>=<값>      어투 값 (task, result, folder, message; 반복 가능)",
+    "  --line <ID>             플러그인 대사 ID (출처와 접두부가 같아야 함)",
+    "  --var <이름>=<값>       대사 변수 (반복 가능; --line과 함께 사용)",
+    "  --file <경로>            이벤트 JSON 파일 (--json과 함께 쓸 수 없음)",
+    "",
+    "공통 옵션 (event, status):",
+    "  --json <JSON 문자열>     event: 이벤트 JSON 문자열 / status: 값 없이 쓰면 결과를 JSON으로 출력",
+    "  --user-data-dir <경로>   앱 사용자 데이터 디렉터리 (기본: 플랫폼 표준 위치)",
+  ].join("\n");
+}

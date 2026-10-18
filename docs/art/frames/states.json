@@ -1,0 +1,2536 @@
+{
+  "base": "../base/base_final.png",
+  "palette": "../base/palette.json",
+  "parts": "../base/parts.json",
+  "states": {
+    "blink": {
+      "fps": 12,
+      "frames": [
+        {
+          "note": "눈 뜸(기준 그대로)",
+          "ops": []
+        },
+        {
+          "note": "반쯤 감김: 눈 위 2행을 속눈썹색으로",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 30,
+                "y": 38,
+                "width": 6,
+                "height": 2
+              },
+              "note": "왼쪽 눈꺼풀이 홍채 윗부분을 덮음"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 44,
+                "y": 38,
+                "width": 6,
+                "height": 2
+              },
+              "note": "오른쪽 눈꺼풀이 홍채 윗부분을 덮음"
+            }
+          ]
+        },
+        {
+          "note": "감김: 기존 모양을 2px 아래로",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 28,
+                "y": 36,
+                "width": 10,
+                "height": 8
+              },
+              "note": "왼쪽 눈 전체를 지움"
+            },
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 42,
+                "y": 36,
+                "width": 10,
+                "height": 8
+              },
+              "note": "오른쪽 눈 전체를 지움"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 30,
+                "y": 38,
+                "width": 6,
+                "height": 2
+              },
+              "note": "왼쪽 감은 눈 윗부분(기존 속눈썹 모양을 2px 아래로)"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 28,
+                "y": 40,
+                "width": 10,
+                "height": 2
+              },
+              "note": "왼쪽 감은 눈 아랫부분"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 44,
+                "y": 38,
+                "width": 6,
+                "height": 2
+              },
+              "note": "오른쪽 감은 눈 윗부분"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 42,
+                "y": 40,
+                "width": 10,
+                "height": 2
+              },
+              "note": "오른쪽 감은 눈 아랫부분"
+            }
+          ]
+        },
+        {
+          "note": "반쯤 감김(다시 뜨는 중)",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 30,
+                "y": 38,
+                "width": 6,
+                "height": 2
+              },
+              "note": "왼쪽 눈꺼풀"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 44,
+                "y": 38,
+                "width": 6,
+                "height": 2
+              },
+              "note": "오른쪽 눈꺼풀"
+            }
+          ]
+        }
+      ]
+    },
+    "idle": {
+      "fps": 8,
+      "frames": [
+        {
+          "note": "꼬리 흔들림 1/8 (dx 0, dy 0)",
+          "ops": []
+        },
+        {
+          "note": "꼬리 흔들림 2/8 (dx -1, dy 0)",
+          "ops": [
+            {
+              "type": "shift",
+              "region": "tail",
+              "dx": -1,
+              "dy": 0,
+              "only": [
+                "hair-light",
+                "hair-mid",
+                "hair-shadow",
+                "shoe"
+              ],
+              "note": "꼬리가 치마 뒤로 살짝 움직임"
+            }
+          ]
+        },
+        {
+          "note": "꼬리 흔들림 3/8 (dx -2, dy 1)",
+          "ops": [
+            {
+              "type": "shift",
+              "region": "tail",
+              "dx": -2,
+              "dy": 1,
+              "only": [
+                "hair-light",
+                "hair-mid",
+                "hair-shadow",
+                "shoe"
+              ],
+              "note": "꼬리가 치마 뒤로 살짝 움직임"
+            }
+          ]
+        },
+        {
+          "note": "꼬리 흔들림 4/8 (dx -2, dy 2)",
+          "ops": [
+            {
+              "type": "shift",
+              "region": "tail",
+              "dx": -2,
+              "dy": 2,
+              "only": [
+                "hair-light",
+                "hair-mid",
+                "hair-shadow",
+                "shoe"
+              ],
+              "note": "꼬리가 치마 뒤로 살짝 움직임"
+            }
+          ]
+        },
+        {
+          "note": "꼬리 흔들림 5/8 (dx -1, dy 2)",
+          "ops": [
+            {
+              "type": "shift",
+              "region": "tail",
+              "dx": -1,
+              "dy": 2,
+              "only": [
+                "hair-light",
+                "hair-mid",
+                "hair-shadow",
+                "shoe"
+              ],
+              "note": "꼬리가 치마 뒤로 살짝 움직임"
+            }
+          ]
+        },
+        {
+          "note": "꼬리 흔들림 6/8 (dx 0, dy 1)",
+          "ops": [
+            {
+              "type": "shift",
+              "region": "tail",
+              "dx": 0,
+              "dy": 1,
+              "only": [
+                "hair-light",
+                "hair-mid",
+                "hair-shadow",
+                "shoe"
+              ],
+              "note": "꼬리가 치마 뒤로 살짝 움직임"
+            }
+          ]
+        },
+        {
+          "note": "꼬리 흔들림 7/8 (dx 0, dy 0)",
+          "ops": []
+        },
+        {
+          "note": "꼬리 흔들림 8/8 (dx 0, dy 0)",
+          "ops": []
+        }
+      ]
+    },
+    "sleep": {
+      "fps": 3,
+      "frames": [
+        {
+          "note": "잠: 눈 감음, 꼬리 0px 내려감",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 28,
+                "y": 36,
+                "width": 10,
+                "height": 8
+              },
+              "note": "왼쪽 눈 전체를 지움"
+            },
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 42,
+                "y": 36,
+                "width": 10,
+                "height": 8
+              },
+              "note": "오른쪽 눈 전체를 지움"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 30,
+                "y": 38,
+                "width": 6,
+                "height": 2
+              },
+              "note": "왼쪽 감은 눈 윗부분(기존 속눈썹 모양을 2px 아래로)"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 28,
+                "y": 40,
+                "width": 10,
+                "height": 2
+              },
+              "note": "왼쪽 감은 눈 아랫부분"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 44,
+                "y": 38,
+                "width": 6,
+                "height": 2
+              },
+              "note": "오른쪽 감은 눈 윗부분"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 42,
+                "y": 40,
+                "width": 10,
+                "height": 2
+              },
+              "note": "오른쪽 감은 눈 아랫부분"
+            }
+          ]
+        },
+        {
+          "note": "잠: 눈 감음, 꼬리 1px 내려감",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 28,
+                "y": 36,
+                "width": 10,
+                "height": 8
+              },
+              "note": "왼쪽 눈 전체를 지움"
+            },
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 42,
+                "y": 36,
+                "width": 10,
+                "height": 8
+              },
+              "note": "오른쪽 눈 전체를 지움"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 30,
+                "y": 38,
+                "width": 6,
+                "height": 2
+              },
+              "note": "왼쪽 감은 눈 윗부분(기존 속눈썹 모양을 2px 아래로)"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 28,
+                "y": 40,
+                "width": 10,
+                "height": 2
+              },
+              "note": "왼쪽 감은 눈 아랫부분"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 44,
+                "y": 38,
+                "width": 6,
+                "height": 2
+              },
+              "note": "오른쪽 감은 눈 윗부분"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 42,
+                "y": 40,
+                "width": 10,
+                "height": 2
+              },
+              "note": "오른쪽 감은 눈 아랫부분"
+            },
+            {
+              "type": "shift",
+              "region": "tail",
+              "dx": 0,
+              "dy": 1,
+              "only": [
+                "hair-light",
+                "hair-mid",
+                "hair-shadow",
+                "shoe"
+              ],
+              "note": "숨 쉬듯 꼬리가 내려감"
+            }
+          ]
+        },
+        {
+          "note": "잠: 눈 감음, 꼬리 2px 내려감",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 28,
+                "y": 36,
+                "width": 10,
+                "height": 8
+              },
+              "note": "왼쪽 눈 전체를 지움"
+            },
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 42,
+                "y": 36,
+                "width": 10,
+                "height": 8
+              },
+              "note": "오른쪽 눈 전체를 지움"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 30,
+                "y": 38,
+                "width": 6,
+                "height": 2
+              },
+              "note": "왼쪽 감은 눈 윗부분(기존 속눈썹 모양을 2px 아래로)"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 28,
+                "y": 40,
+                "width": 10,
+                "height": 2
+              },
+              "note": "왼쪽 감은 눈 아랫부분"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 44,
+                "y": 38,
+                "width": 6,
+                "height": 2
+              },
+              "note": "오른쪽 감은 눈 윗부분"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 42,
+                "y": 40,
+                "width": 10,
+                "height": 2
+              },
+              "note": "오른쪽 감은 눈 아랫부분"
+            },
+            {
+              "type": "shift",
+              "region": "tail",
+              "dx": 0,
+              "dy": 2,
+              "only": [
+                "hair-light",
+                "hair-mid",
+                "hair-shadow",
+                "shoe"
+              ],
+              "note": "숨 쉬듯 꼬리가 내려감"
+            }
+          ]
+        },
+        {
+          "note": "잠: 눈 감음, 꼬리 1px 내려감",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 28,
+                "y": 36,
+                "width": 10,
+                "height": 8
+              },
+              "note": "왼쪽 눈 전체를 지움"
+            },
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 42,
+                "y": 36,
+                "width": 10,
+                "height": 8
+              },
+              "note": "오른쪽 눈 전체를 지움"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 30,
+                "y": 38,
+                "width": 6,
+                "height": 2
+              },
+              "note": "왼쪽 감은 눈 윗부분(기존 속눈썹 모양을 2px 아래로)"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 28,
+                "y": 40,
+                "width": 10,
+                "height": 2
+              },
+              "note": "왼쪽 감은 눈 아랫부분"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 44,
+                "y": 38,
+                "width": 6,
+                "height": 2
+              },
+              "note": "오른쪽 감은 눈 윗부분"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 42,
+                "y": 40,
+                "width": 10,
+                "height": 2
+              },
+              "note": "오른쪽 감은 눈 아랫부분"
+            },
+            {
+              "type": "shift",
+              "region": "tail",
+              "dx": 0,
+              "dy": 1,
+              "only": [
+                "hair-light",
+                "hair-mid",
+                "hair-shadow",
+                "shoe"
+              ],
+              "note": "숨 쉬듯 꼬리가 내려감"
+            }
+          ]
+        }
+      ]
+    },
+    "talk": {
+      "fps": 8,
+      "frames": [
+        {
+          "note": "입 닫힘(기준)",
+          "ops": []
+        },
+        {
+          "note": "입 조금 열림",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 36,
+                "y": 46,
+                "width": 8,
+                "height": 6
+              },
+              "note": "입 주변 지움"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 38,
+                "y": 48,
+                "width": 4,
+                "height": 3
+              },
+              "note": "작게 벌린 입"
+            }
+          ]
+        },
+        {
+          "note": "입 크게 열림",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 36,
+                "y": 46,
+                "width": 8,
+                "height": 6
+              },
+              "note": "입 주변 지움"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 37,
+                "y": 48,
+                "width": 6,
+                "height": 4
+              },
+              "note": "크게 벌린 입"
+            }
+          ]
+        },
+        {
+          "note": "입 조금 열림",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 36,
+                "y": 46,
+                "width": 8,
+                "height": 6
+              },
+              "note": "입 주변 지움"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 38,
+                "y": 48,
+                "width": 4,
+                "height": 3
+              },
+              "note": "작게 벌린 입"
+            }
+          ]
+        }
+      ]
+    },
+    "happy": {
+      "fps": 10,
+      "frames": [
+        {
+          "note": "입꼬리가 살짝 올라감",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 34,
+                "y": 44,
+                "width": 12,
+                "height": 8
+              },
+              "note": "입 주변을 피부색으로 지움"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 38,
+                "y": 48,
+                "width": 4,
+                "height": 2
+              },
+              "note": "입 가운데 선(기준과 같은 자리)"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 36,
+                "y": 47,
+                "width": 2,
+                "height": 1
+              },
+              "note": "왼쪽 입꼬리가 살짝 올라감"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 42,
+                "y": 47,
+                "width": 2,
+                "height": 1
+              },
+              "note": "오른쪽 입꼬리가 살짝 올라감"
+            }
+          ]
+        },
+        {
+          "note": "입꼬리가 올라감, 꼬리 흔듦",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 34,
+                "y": 44,
+                "width": 12,
+                "height": 8
+              },
+              "note": "입 주변을 피부색으로 지움"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 38,
+                "y": 48,
+                "width": 4,
+                "height": 2
+              },
+              "note": "입 가운데 선"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 36,
+                "y": 46,
+                "width": 2,
+                "height": 2
+              },
+              "note": "왼쪽 입꼬리가 올라감"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 42,
+                "y": 46,
+                "width": 2,
+                "height": 2
+              },
+              "note": "오른쪽 입꼬리가 올라감"
+            },
+            {
+              "type": "shift",
+              "region": "tail",
+              "dx": -1,
+              "dy": 0,
+              "only": [
+                "hair-light",
+                "hair-mid",
+                "hair-shadow",
+                "shoe"
+              ],
+              "note": "꼬리"
+            }
+          ]
+        },
+        {
+          "note": "가장 크게 웃음(입은 닫힘), 꼬리 크게",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 34,
+                "y": 44,
+                "width": 12,
+                "height": 8
+              },
+              "note": "입 주변을 피부색으로 지움"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 38,
+                "y": 48,
+                "width": 4,
+                "height": 2
+              },
+              "note": "입 가운데 선"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 36,
+                "y": 46,
+                "width": 2,
+                "height": 2
+              },
+              "note": "왼쪽 입꼬리가 올라감"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 42,
+                "y": 46,
+                "width": 2,
+                "height": 2
+              },
+              "note": "오른쪽 입꼬리가 올라감"
+            },
+            {
+              "type": "shift",
+              "region": "tail",
+              "dx": -2,
+              "dy": 1,
+              "only": [
+                "hair-light",
+                "hair-mid",
+                "hair-shadow",
+                "shoe"
+              ],
+              "note": "꼬리"
+            }
+          ]
+        },
+        {
+          "note": "입꼬리가 올라감, 꼬리 흔듦",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 34,
+                "y": 44,
+                "width": 12,
+                "height": 8
+              },
+              "note": "입 주변을 피부색으로 지움"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 38,
+                "y": 48,
+                "width": 4,
+                "height": 2
+              },
+              "note": "입 가운데 선"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 36,
+                "y": 46,
+                "width": 2,
+                "height": 2
+              },
+              "note": "왼쪽 입꼬리가 올라감"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 42,
+                "y": 46,
+                "width": 2,
+                "height": 2
+              },
+              "note": "오른쪽 입꼬리가 올라감"
+            },
+            {
+              "type": "shift",
+              "region": "tail",
+              "dx": -1,
+              "dy": 0,
+              "only": [
+                "hair-light",
+                "hair-mid",
+                "hair-shadow",
+                "shoe"
+              ],
+              "note": "꼬리"
+            }
+          ]
+        },
+        {
+          "note": "입꼬리가 살짝 올라감",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 34,
+                "y": 44,
+                "width": 12,
+                "height": 8
+              },
+              "note": "입 주변을 피부색으로 지움"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 38,
+                "y": 48,
+                "width": 4,
+                "height": 2
+              },
+              "note": "입 가운데 선(기준과 같은 자리)"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 36,
+                "y": 47,
+                "width": 2,
+                "height": 1
+              },
+              "note": "왼쪽 입꼬리가 살짝 올라감"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 42,
+                "y": 47,
+                "width": 2,
+                "height": 1
+              },
+              "note": "오른쪽 입꼬리가 살짝 올라감"
+            }
+          ]
+        },
+        {
+          "note": "미소 유지",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 34,
+                "y": 44,
+                "width": 12,
+                "height": 8
+              },
+              "note": "입 주변을 피부색으로 지움"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 38,
+                "y": 48,
+                "width": 4,
+                "height": 2
+              },
+              "note": "입 가운데 선(기준과 같은 자리)"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 36,
+                "y": 47,
+                "width": 2,
+                "height": 1
+              },
+              "note": "왼쪽 입꼬리가 살짝 올라감"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 42,
+                "y": 47,
+                "width": 2,
+                "height": 1
+              },
+              "note": "오른쪽 입꼬리가 살짝 올라감"
+            }
+          ]
+        }
+      ]
+    },
+    "surprised": {
+      "fps": 12,
+      "frames": [
+        {
+          "note": "눈 커짐 시작",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 31,
+                "y": 34,
+                "width": 4,
+                "height": 2
+              },
+              "note": "왼쪽 눈 위 속눈썹이 올라감"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 45,
+                "y": 34,
+                "width": 4,
+                "height": 2
+              },
+              "note": "오른쪽 눈 위 속눈썹이 올라감"
+            },
+            {
+              "type": "rect",
+              "color": "apron",
+              "region": {
+                "x": 31,
+                "y": 38,
+                "width": 2,
+                "height": 2
+              },
+              "note": "왼쪽 하이라이트"
+            },
+            {
+              "type": "rect",
+              "color": "apron",
+              "region": {
+                "x": 47,
+                "y": 38,
+                "width": 2,
+                "height": 2
+              },
+              "note": "오른쪽 하이라이트"
+            }
+          ]
+        },
+        {
+          "note": "눈 크게, 입 o",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 31,
+                "y": 34,
+                "width": 4,
+                "height": 2
+              },
+              "note": "왼쪽 눈 위 속눈썹이 올라감"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 45,
+                "y": 34,
+                "width": 4,
+                "height": 2
+              },
+              "note": "오른쪽 눈 위 속눈썹이 올라감"
+            },
+            {
+              "type": "rect",
+              "color": "apron",
+              "region": {
+                "x": 31,
+                "y": 38,
+                "width": 2,
+                "height": 2
+              },
+              "note": "왼쪽 하이라이트"
+            },
+            {
+              "type": "rect",
+              "color": "apron",
+              "region": {
+                "x": 47,
+                "y": 38,
+                "width": 2,
+                "height": 2
+              },
+              "note": "오른쪽 하이라이트"
+            },
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 36,
+                "y": 46,
+                "width": 8,
+                "height": 6
+              },
+              "note": "입 주변 지움"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 39,
+                "y": 48,
+                "width": 2,
+                "height": 3
+              },
+              "note": "놀란 입 o"
+            }
+          ]
+        },
+        {
+          "note": "놀람 유지, 꼬리 올림",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 31,
+                "y": 34,
+                "width": 4,
+                "height": 2
+              },
+              "note": "왼쪽 눈 위 속눈썹이 올라감"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 45,
+                "y": 34,
+                "width": 4,
+                "height": 2
+              },
+              "note": "오른쪽 눈 위 속눈썹이 올라감"
+            },
+            {
+              "type": "rect",
+              "color": "apron",
+              "region": {
+                "x": 31,
+                "y": 38,
+                "width": 2,
+                "height": 2
+              },
+              "note": "왼쪽 하이라이트"
+            },
+            {
+              "type": "rect",
+              "color": "apron",
+              "region": {
+                "x": 47,
+                "y": 38,
+                "width": 2,
+                "height": 2
+              },
+              "note": "오른쪽 하이라이트"
+            },
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 36,
+                "y": 46,
+                "width": 8,
+                "height": 6
+              },
+              "note": "입 주변 지움"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 39,
+                "y": 48,
+                "width": 2,
+                "height": 3
+              },
+              "note": "놀란 입 o"
+            },
+            {
+              "type": "shift",
+              "region": "tail",
+              "dx": 0,
+              "dy": -2,
+              "only": [
+                "hair-light",
+                "hair-mid",
+                "hair-shadow",
+                "shoe"
+              ],
+              "note": "꼬리가 곤두섬"
+            }
+          ]
+        },
+        {
+          "note": "놀람 유지",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 31,
+                "y": 34,
+                "width": 4,
+                "height": 2
+              },
+              "note": "왼쪽 눈 위 속눈썹이 올라감"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 45,
+                "y": 34,
+                "width": 4,
+                "height": 2
+              },
+              "note": "오른쪽 눈 위 속눈썹이 올라감"
+            },
+            {
+              "type": "rect",
+              "color": "apron",
+              "region": {
+                "x": 31,
+                "y": 38,
+                "width": 2,
+                "height": 2
+              },
+              "note": "왼쪽 하이라이트"
+            },
+            {
+              "type": "rect",
+              "color": "apron",
+              "region": {
+                "x": 47,
+                "y": 38,
+                "width": 2,
+                "height": 2
+              },
+              "note": "오른쪽 하이라이트"
+            },
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 36,
+                "y": 46,
+                "width": 8,
+                "height": 6
+              },
+              "note": "입 주변 지움"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 39,
+                "y": 48,
+                "width": 2,
+                "height": 3
+              },
+              "note": "놀란 입 o"
+            },
+            {
+              "type": "shift",
+              "region": "tail",
+              "dx": 0,
+              "dy": -1,
+              "only": [
+                "hair-light",
+                "hair-mid",
+                "hair-shadow",
+                "shoe"
+              ],
+              "note": "꼬리"
+            }
+          ]
+        },
+        {
+          "note": "놀람 풀림",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 36,
+                "y": 46,
+                "width": 8,
+                "height": 6
+              },
+              "note": "입 주변 지움"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 39,
+                "y": 48,
+                "width": 2,
+                "height": 3
+              },
+              "note": "놀란 입 o"
+            }
+          ]
+        }
+      ]
+    },
+    "worried": {
+      "fps": 8,
+      "frames": [
+        {
+          "note": "걱정: 눈썹과 입, 꼬리 0px 처짐",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 34,
+                "y": 34,
+                "width": 2,
+                "height": 2
+              },
+              "note": "왼쪽 눈썹 안쪽이 올라감"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 30,
+                "y": 36,
+                "width": 4,
+                "height": 2
+              },
+              "note": "왼쪽 눈썹 바깥쪽"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 44,
+                "y": 34,
+                "width": 2,
+                "height": 2
+              },
+              "note": "오른쪽 눈썹 안쪽"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 46,
+                "y": 36,
+                "width": 4,
+                "height": 2
+              },
+              "note": "오른쪽 눈썹 바깥쪽"
+            },
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 36,
+                "y": 46,
+                "width": 8,
+                "height": 6
+              },
+              "note": "입 주변 지움"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 39,
+                "y": 48,
+                "width": 2,
+                "height": 1
+              },
+              "note": "걱정 입 위"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 38,
+                "y": 49,
+                "width": 1,
+                "height": 1
+              },
+              "note": "걱정 입 왼"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 41,
+                "y": 49,
+                "width": 1,
+                "height": 1
+              },
+              "note": "걱정 입 오른"
+            }
+          ]
+        },
+        {
+          "note": "걱정: 눈썹과 입, 꼬리 1px 처짐",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 34,
+                "y": 34,
+                "width": 2,
+                "height": 2
+              },
+              "note": "왼쪽 눈썹 안쪽이 올라감"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 30,
+                "y": 36,
+                "width": 4,
+                "height": 2
+              },
+              "note": "왼쪽 눈썹 바깥쪽"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 44,
+                "y": 34,
+                "width": 2,
+                "height": 2
+              },
+              "note": "오른쪽 눈썹 안쪽"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 46,
+                "y": 36,
+                "width": 4,
+                "height": 2
+              },
+              "note": "오른쪽 눈썹 바깥쪽"
+            },
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 36,
+                "y": 46,
+                "width": 8,
+                "height": 6
+              },
+              "note": "입 주변 지움"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 39,
+                "y": 48,
+                "width": 2,
+                "height": 1
+              },
+              "note": "걱정 입 위"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 38,
+                "y": 49,
+                "width": 1,
+                "height": 1
+              },
+              "note": "걱정 입 왼"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 41,
+                "y": 49,
+                "width": 1,
+                "height": 1
+              },
+              "note": "걱정 입 오른"
+            },
+            {
+              "type": "shift",
+              "region": "tail",
+              "dx": 0,
+              "dy": 1,
+              "only": [
+                "hair-light",
+                "hair-mid",
+                "hair-shadow",
+                "shoe"
+              ],
+              "note": "꼬리가 처짐"
+            }
+          ]
+        },
+        {
+          "note": "걱정: 눈썹과 입, 꼬리 2px 처짐",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 34,
+                "y": 34,
+                "width": 2,
+                "height": 2
+              },
+              "note": "왼쪽 눈썹 안쪽이 올라감"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 30,
+                "y": 36,
+                "width": 4,
+                "height": 2
+              },
+              "note": "왼쪽 눈썹 바깥쪽"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 44,
+                "y": 34,
+                "width": 2,
+                "height": 2
+              },
+              "note": "오른쪽 눈썹 안쪽"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 46,
+                "y": 36,
+                "width": 4,
+                "height": 2
+              },
+              "note": "오른쪽 눈썹 바깥쪽"
+            },
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 36,
+                "y": 46,
+                "width": 8,
+                "height": 6
+              },
+              "note": "입 주변 지움"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 39,
+                "y": 48,
+                "width": 2,
+                "height": 1
+              },
+              "note": "걱정 입 위"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 38,
+                "y": 49,
+                "width": 1,
+                "height": 1
+              },
+              "note": "걱정 입 왼"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 41,
+                "y": 49,
+                "width": 1,
+                "height": 1
+              },
+              "note": "걱정 입 오른"
+            },
+            {
+              "type": "shift",
+              "region": "tail",
+              "dx": 0,
+              "dy": 2,
+              "only": [
+                "hair-light",
+                "hair-mid",
+                "hair-shadow",
+                "shoe"
+              ],
+              "note": "꼬리가 처짐"
+            }
+          ]
+        },
+        {
+          "note": "걱정: 눈썹과 입, 꼬리 3px 처짐",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 34,
+                "y": 34,
+                "width": 2,
+                "height": 2
+              },
+              "note": "왼쪽 눈썹 안쪽이 올라감"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 30,
+                "y": 36,
+                "width": 4,
+                "height": 2
+              },
+              "note": "왼쪽 눈썹 바깥쪽"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 44,
+                "y": 34,
+                "width": 2,
+                "height": 2
+              },
+              "note": "오른쪽 눈썹 안쪽"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 46,
+                "y": 36,
+                "width": 4,
+                "height": 2
+              },
+              "note": "오른쪽 눈썹 바깥쪽"
+            },
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 36,
+                "y": 46,
+                "width": 8,
+                "height": 6
+              },
+              "note": "입 주변 지움"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 39,
+                "y": 48,
+                "width": 2,
+                "height": 1
+              },
+              "note": "걱정 입 위"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 38,
+                "y": 49,
+                "width": 1,
+                "height": 1
+              },
+              "note": "걱정 입 왼"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 41,
+                "y": 49,
+                "width": 1,
+                "height": 1
+              },
+              "note": "걱정 입 오른"
+            },
+            {
+              "type": "shift",
+              "region": "tail",
+              "dx": 0,
+              "dy": 3,
+              "only": [
+                "hair-light",
+                "hair-mid",
+                "hair-shadow",
+                "shoe"
+              ],
+              "note": "꼬리가 처짐"
+            }
+          ]
+        },
+        {
+          "note": "걱정: 눈썹과 입, 꼬리 2px 처짐",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 34,
+                "y": 34,
+                "width": 2,
+                "height": 2
+              },
+              "note": "왼쪽 눈썹 안쪽이 올라감"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 30,
+                "y": 36,
+                "width": 4,
+                "height": 2
+              },
+              "note": "왼쪽 눈썹 바깥쪽"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 44,
+                "y": 34,
+                "width": 2,
+                "height": 2
+              },
+              "note": "오른쪽 눈썹 안쪽"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 46,
+                "y": 36,
+                "width": 4,
+                "height": 2
+              },
+              "note": "오른쪽 눈썹 바깥쪽"
+            },
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 36,
+                "y": 46,
+                "width": 8,
+                "height": 6
+              },
+              "note": "입 주변 지움"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 39,
+                "y": 48,
+                "width": 2,
+                "height": 1
+              },
+              "note": "걱정 입 위"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 38,
+                "y": 49,
+                "width": 1,
+                "height": 1
+              },
+              "note": "걱정 입 왼"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 41,
+                "y": 49,
+                "width": 1,
+                "height": 1
+              },
+              "note": "걱정 입 오른"
+            },
+            {
+              "type": "shift",
+              "region": "tail",
+              "dx": 0,
+              "dy": 2,
+              "only": [
+                "hair-light",
+                "hair-mid",
+                "hair-shadow",
+                "shoe"
+              ],
+              "note": "꼬리가 처짐"
+            }
+          ]
+        },
+        {
+          "note": "걱정: 눈썹과 입, 꼬리 1px 처짐",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 34,
+                "y": 34,
+                "width": 2,
+                "height": 2
+              },
+              "note": "왼쪽 눈썹 안쪽이 올라감"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 30,
+                "y": 36,
+                "width": 4,
+                "height": 2
+              },
+              "note": "왼쪽 눈썹 바깥쪽"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 44,
+                "y": 34,
+                "width": 2,
+                "height": 2
+              },
+              "note": "오른쪽 눈썹 안쪽"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 46,
+                "y": 36,
+                "width": 4,
+                "height": 2
+              },
+              "note": "오른쪽 눈썹 바깥쪽"
+            },
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 36,
+                "y": 46,
+                "width": 8,
+                "height": 6
+              },
+              "note": "입 주변 지움"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 39,
+                "y": 48,
+                "width": 2,
+                "height": 1
+              },
+              "note": "걱정 입 위"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 38,
+                "y": 49,
+                "width": 1,
+                "height": 1
+              },
+              "note": "걱정 입 왼"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 41,
+                "y": 49,
+                "width": 1,
+                "height": 1
+              },
+              "note": "걱정 입 오른"
+            },
+            {
+              "type": "shift",
+              "region": "tail",
+              "dx": 0,
+              "dy": 1,
+              "only": [
+                "hair-light",
+                "hair-mid",
+                "hair-shadow",
+                "shoe"
+              ],
+              "note": "꼬리가 처짐"
+            }
+          ]
+        }
+      ]
+    },
+    "walk": {
+      "fps": 10,
+      "frames": [
+        {
+          "note": "서 있음(양발 땅)",
+          "ops": []
+        },
+        {
+          "note": "왼발 들기 시작",
+          "ops": [
+            {
+              "type": "shift",
+              "region": {
+                "x": 28,
+                "y": 171,
+                "width": 13,
+                "height": 21
+              },
+              "dx": 0,
+              "dy": -2,
+              "only": [
+                "outline",
+                "stocking",
+                "shoe",
+                "hair-mid"
+              ],
+              "note": "왼발이 치마 아래에서 올라감"
+            },
+            {
+              "type": "shift",
+              "region": "tail",
+              "dx": -1,
+              "dy": 0,
+              "only": [
+                "hair-light",
+                "hair-mid",
+                "hair-shadow",
+                "shoe"
+              ],
+              "note": "꼬리"
+            }
+          ]
+        },
+        {
+          "note": "왼발 높이, 앞으로",
+          "ops": [
+            {
+              "type": "shift",
+              "region": {
+                "x": 28,
+                "y": 171,
+                "width": 13,
+                "height": 21
+              },
+              "dx": 1,
+              "dy": -3,
+              "only": [
+                "outline",
+                "stocking",
+                "shoe",
+                "hair-mid"
+              ],
+              "note": "왼발 최고점"
+            },
+            {
+              "type": "shift",
+              "region": "tail",
+              "dx": -2,
+              "dy": 1,
+              "only": [
+                "hair-light",
+                "hair-mid",
+                "hair-shadow",
+                "shoe"
+              ],
+              "note": "꼬리"
+            }
+          ]
+        },
+        {
+          "note": "양발 땅(중간)",
+          "ops": [
+            {
+              "type": "shift",
+              "region": "tail",
+              "dx": -1,
+              "dy": 1,
+              "only": [
+                "hair-light",
+                "hair-mid",
+                "hair-shadow",
+                "shoe"
+              ],
+              "note": "꼬리"
+            }
+          ]
+        },
+        {
+          "note": "오른발 들기 시작",
+          "ops": [
+            {
+              "type": "shift",
+              "region": {
+                "x": 41,
+                "y": 171,
+                "width": 13,
+                "height": 21
+              },
+              "dx": 0,
+              "dy": -2,
+              "only": [
+                "outline",
+                "stocking",
+                "shoe",
+                "hair-mid"
+              ],
+              "note": "오른발이 올라감"
+            },
+            {
+              "type": "shift",
+              "region": "tail",
+              "dx": -1,
+              "dy": 0,
+              "only": [
+                "hair-light",
+                "hair-mid",
+                "hair-shadow",
+                "shoe"
+              ],
+              "note": "꼬리"
+            }
+          ]
+        },
+        {
+          "note": "오른발 높이, 앞으로",
+          "ops": [
+            {
+              "type": "shift",
+              "region": {
+                "x": 41,
+                "y": 171,
+                "width": 13,
+                "height": 21
+              },
+              "dx": -1,
+              "dy": -3,
+              "only": [
+                "outline",
+                "stocking",
+                "shoe",
+                "hair-mid"
+              ],
+              "note": "오른발 최고점"
+            },
+            {
+              "type": "shift",
+              "region": "tail",
+              "dx": 0,
+              "dy": 0,
+              "only": [
+                "hair-light",
+                "hair-mid",
+                "hair-shadow",
+                "shoe"
+              ],
+              "note": "꼬리"
+            }
+          ]
+        }
+      ]
+    },
+    "drag": {
+      "fps": 8,
+      "frames": [
+        {
+          "note": "들림: 놀란 얼굴, 발이 왼쪽으로 1px, 꼬리가 들림",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 31,
+                "y": 34,
+                "width": 4,
+                "height": 2
+              },
+              "note": "왼쪽 눈 위 속눈썹이 올라감"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 45,
+                "y": 34,
+                "width": 4,
+                "height": 2
+              },
+              "note": "오른쪽 눈 위 속눈썹이 올라감"
+            },
+            {
+              "type": "rect",
+              "color": "apron",
+              "region": {
+                "x": 31,
+                "y": 38,
+                "width": 2,
+                "height": 2
+              },
+              "note": "왼쪽 하이라이트"
+            },
+            {
+              "type": "rect",
+              "color": "apron",
+              "region": {
+                "x": 47,
+                "y": 38,
+                "width": 2,
+                "height": 2
+              },
+              "note": "오른쪽 하이라이트"
+            },
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 36,
+                "y": 46,
+                "width": 8,
+                "height": 6
+              },
+              "note": "입 주변 지움"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 39,
+                "y": 48,
+                "width": 2,
+                "height": 3
+              },
+              "note": "놀란 입 o"
+            },
+            {
+              "type": "shift",
+              "region": {
+                "x": 28,
+                "y": 171,
+                "width": 13,
+                "height": 21
+              },
+              "dx": -1,
+              "dy": 0,
+              "only": [
+                "outline",
+                "stocking",
+                "shoe",
+                "hair-mid"
+              ],
+              "note": "발이 흔들림(왼발)"
+            },
+            {
+              "type": "shift",
+              "region": {
+                "x": 41,
+                "y": 171,
+                "width": 13,
+                "height": 21
+              },
+              "dx": -1,
+              "dy": 0,
+              "only": [
+                "outline",
+                "stocking",
+                "shoe",
+                "hair-mid"
+              ],
+              "note": "발이 흔들림(오른발)"
+            },
+            {
+              "type": "shift",
+              "region": "tail",
+              "dx": 0,
+              "dy": -2,
+              "only": [
+                "hair-light",
+                "hair-mid",
+                "hair-shadow",
+                "shoe"
+              ],
+              "note": "꼬리가 들림"
+            }
+          ]
+        },
+        {
+          "note": "발 가운데, 꼬리",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 31,
+                "y": 34,
+                "width": 4,
+                "height": 2
+              },
+              "note": "왼쪽 눈 위 속눈썹이 올라감"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 45,
+                "y": 34,
+                "width": 4,
+                "height": 2
+              },
+              "note": "오른쪽 눈 위 속눈썹이 올라감"
+            },
+            {
+              "type": "rect",
+              "color": "apron",
+              "region": {
+                "x": 31,
+                "y": 38,
+                "width": 2,
+                "height": 2
+              },
+              "note": "왼쪽 하이라이트"
+            },
+            {
+              "type": "rect",
+              "color": "apron",
+              "region": {
+                "x": 47,
+                "y": 38,
+                "width": 2,
+                "height": 2
+              },
+              "note": "오른쪽 하이라이트"
+            },
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 36,
+                "y": 46,
+                "width": 8,
+                "height": 6
+              },
+              "note": "입 주변 지움"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 39,
+                "y": 48,
+                "width": 2,
+                "height": 3
+              },
+              "note": "놀란 입 o"
+            },
+            {
+              "type": "shift",
+              "region": "tail",
+              "dx": 0,
+              "dy": -1,
+              "only": [
+                "hair-light",
+                "hair-mid",
+                "hair-shadow",
+                "shoe"
+              ],
+              "note": "꼬리"
+            }
+          ]
+        },
+        {
+          "note": "발 오른쪽으로",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 31,
+                "y": 34,
+                "width": 4,
+                "height": 2
+              },
+              "note": "왼쪽 눈 위 속눈썹이 올라감"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 45,
+                "y": 34,
+                "width": 4,
+                "height": 2
+              },
+              "note": "오른쪽 눈 위 속눈썹이 올라감"
+            },
+            {
+              "type": "rect",
+              "color": "apron",
+              "region": {
+                "x": 31,
+                "y": 38,
+                "width": 2,
+                "height": 2
+              },
+              "note": "왼쪽 하이라이트"
+            },
+            {
+              "type": "rect",
+              "color": "apron",
+              "region": {
+                "x": 47,
+                "y": 38,
+                "width": 2,
+                "height": 2
+              },
+              "note": "오른쪽 하이라이트"
+            },
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 36,
+                "y": 46,
+                "width": 8,
+                "height": 6
+              },
+              "note": "입 주변 지움"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 39,
+                "y": 48,
+                "width": 2,
+                "height": 3
+              },
+              "note": "놀란 입 o"
+            },
+            {
+              "type": "shift",
+              "region": {
+                "x": 28,
+                "y": 171,
+                "width": 13,
+                "height": 21
+              },
+              "dx": 2,
+              "dy": 0,
+              "only": [
+                "outline",
+                "stocking",
+                "shoe",
+                "hair-mid"
+              ],
+              "note": "발이 흔들림(왼발)"
+            },
+            {
+              "type": "shift",
+              "region": {
+                "x": 41,
+                "y": 171,
+                "width": 13,
+                "height": 21
+              },
+              "dx": 2,
+              "dy": 0,
+              "only": [
+                "outline",
+                "stocking",
+                "shoe",
+                "hair-mid"
+              ],
+              "note": "발이 흔들림(오른발)"
+            },
+            {
+              "type": "shift",
+              "region": "tail",
+              "dx": -1,
+              "dy": -2,
+              "only": [
+                "hair-light",
+                "hair-mid",
+                "hair-shadow",
+                "shoe"
+              ],
+              "note": "꼬리가 들림"
+            }
+          ]
+        },
+        {
+          "note": "발 가운데, 꼬리",
+          "ops": [
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 31,
+                "y": 34,
+                "width": 4,
+                "height": 2
+              },
+              "note": "왼쪽 눈 위 속눈썹이 올라감"
+            },
+            {
+              "type": "rect",
+              "color": "outline",
+              "region": {
+                "x": 45,
+                "y": 34,
+                "width": 4,
+                "height": 2
+              },
+              "note": "오른쪽 눈 위 속눈썹이 올라감"
+            },
+            {
+              "type": "rect",
+              "color": "apron",
+              "region": {
+                "x": 31,
+                "y": 38,
+                "width": 2,
+                "height": 2
+              },
+              "note": "왼쪽 하이라이트"
+            },
+            {
+              "type": "rect",
+              "color": "apron",
+              "region": {
+                "x": 47,
+                "y": 38,
+                "width": 2,
+                "height": 2
+              },
+              "note": "오른쪽 하이라이트"
+            },
+            {
+              "type": "rect",
+              "color": "skin",
+              "region": {
+                "x": 36,
+                "y": 46,
+                "width": 8,
+                "height": 6
+              },
+              "note": "입 주변 지움"
+            },
+            {
+              "type": "rect",
+              "color": "mouth",
+              "region": {
+                "x": 39,
+                "y": 48,
+                "width": 2,
+                "height": 3
+              },
+              "note": "놀란 입 o"
+            },
+            {
+              "type": "shift",
+              "region": "tail",
+              "dx": 0,
+              "dy": -1,
+              "only": [
+                "hair-light",
+                "hair-mid",
+                "hair-shadow",
+                "shoe"
+              ],
+              "note": "꼬리"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

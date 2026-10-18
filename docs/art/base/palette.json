@@ -1,0 +1,19 @@
+{
+  "colors": [
+    { "name": "outline", "hex": "#151a2e", "role": "가장 어두운 남색 외곽선·속눈썹·신발 밑창" },
+    { "name": "dress-shadow", "hex": "#232a44", "role": "치마 주름과 소매의 깊은 남색 음영" },
+    { "name": "dress", "hex": "#343d62", "role": "긴 클래식 메이드복의 남색 면; 어두운 배경에서 구분" },
+    { "name": "ribbon", "hex": "#293c6d", "role": "머리와 목의 남색 리본" },
+    { "name": "hair-shadow", "hex": "#928fa0", "role": "은발·귀·포니테일·꼬리의 깊은 그림자" },
+    { "name": "hair-mid", "hex": "#b6b4c1", "role": "초안의 비슷한 회은색 여섯 색을 합친 중간톤" },
+    { "name": "hair-light", "hex": "#dcdbe4", "role": "차가운 은발과 늑대 털의 밝은 면" },
+    { "name": "skin", "hex": "#f3cdb1", "role": "얼굴·손의 따뜻한 복숭아색 피부" },
+    { "name": "skin-shadow", "hex": "#d5997e", "role": "턱·목·손 가장자리와 귀 안쪽의 피부 음영" },
+    { "name": "eye", "hex": "#3a5fa6", "role": "양쪽 눈의 차분한 푸른 홍채" },
+    { "name": "apron", "hex": "#fcfaf7", "role": "앞치마·프릴·소매 끝·흰자; 눈 안의 한 픽셀 강조도 공유" },
+    { "name": "apron-shadow", "hex": "#c9c6d2", "role": "앞치마·머리 프릴·칼라의 경계와 접힘" },
+    { "name": "shoe", "hex": "#30334b", "role": "신발의 면; 밝은 반사는 hair-mid와 공유" },
+    { "name": "stocking", "hex": "#635769", "role": "치마 아래 스타킹의 저채도 회갈색" },
+    { "name": "mouth", "hex": "#855246", "role": "피부 위의 짧고 닫힌 두 픽셀 입" }
+  ]
+}

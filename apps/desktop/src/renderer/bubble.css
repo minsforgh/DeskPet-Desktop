@@ -1,0 +1,62 @@
+html, body { margin: 0; overflow: hidden; background: transparent; }
+
+/* The window is sized to this box. max-content keeps measurement independent of the current window size. */
+#bubble { position: absolute; left: 0; top: 0; box-sizing: border-box; width: max-content; max-width: var(--bubble-max-width, 280px); padding-bottom: 10px; }
+body.below #bubble { padding-top: 10px; padding-bottom: 0; }
+
+#body {
+  box-sizing: border-box;
+  border: 2px solid #2b2630;
+  border-radius: 14px;
+  background: #fffdf7;
+  color: #2b2630;
+  font: 14px/1.5 system-ui, sans-serif;
+}
+#text {
+  padding: 8px 12px;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  cursor: default;
+  user-select: none;
+}
+#text .line-part { display: block; }
+#content.expanded { overflow-y: auto; max-height: var(--bubble-content-max-height); }
+#detail { display: none; padding: 0 12px 8px; white-space: pre-wrap; overflow-wrap: anywhere; }
+#content.expanded #detail:not(:empty) { display: block; }
+#expand-hint { display: none; margin: 0 12px 8px; font-size: 11px; color: #625477; cursor: pointer; }
+#content.detail-only #expand-hint { display: block; }
+#close { display: none; margin: 0 10px 10px; border: 1px solid #2b2630; border-radius: 7px;
+  background: #fffdf7; color: #2b2630; padding: 3px 7px; font: inherit; cursor: pointer; }
+#close.visible { display: block; }
+#actions { display: flex; flex-wrap: wrap; gap: 6px; padding: 0 10px 10px; }
+#actions:empty { display: none; }
+#actions button {
+  box-sizing: border-box;
+  min-width: 0;
+  max-width: 100%;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  border: 1px solid #2b2630;
+  border-radius: 7px;
+  background: #f4e7ff;
+  color: #2b2630;
+  padding: 3px 7px;
+  font: inherit;
+  cursor: pointer;
+}
+#actions button:hover { background: #e9d4ff; }
+
+/* A square turned 45 degrees; its two bordered edges form the tip that points at the pet. */
+#tail {
+  position: absolute;
+  left: calc(var(--tail-x, 50%) - 6px);
+  bottom: 5px;
+  box-sizing: border-box;
+  width: 12px;
+  height: 12px;
+  border-right: 2px solid #2b2630;
+  border-bottom: 2px solid #2b2630;
+  background: #fffdf7;
+  transform: rotate(45deg);
+}
+body.below #tail { top: 5px; bottom: auto; transform: rotate(225deg); }

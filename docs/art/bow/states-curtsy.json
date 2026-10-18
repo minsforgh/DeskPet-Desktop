@@ -1,0 +1,2839 @@
+{
+  "base": "curtsy_base.png",
+  "palette": "../base/palette.json",
+  "parts": "parts-curtsy.json",
+  "states": {
+    "curtsy": {
+      "fps": 8,
+      "frames": [
+        {
+          "note": "1: Enter from the least-bent pose; upper body 8px above master, feet unchanged.",
+          "ops": [
+            {
+              "type": "shift",
+              "region": "upper",
+              "dx": 0,
+              "dy": -8,
+              "note": "Lift upper 8px; distribute bending across the skirt."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 22,
+                "y": 100,
+                "width": 6,
+                "height": 3
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 28,
+                "y": 100,
+                "width": 2,
+                "height": 3
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 30,
+                "y": 100,
+                "width": 4,
+                "height": 3
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 34,
+                "y": 100,
+                "width": 16,
+                "height": 3
+              },
+              "color": "apron",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 50,
+                "y": 100,
+                "width": 2,
+                "height": 3
+              },
+              "color": "apron-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 52,
+                "y": 100,
+                "width": 18,
+                "height": 3
+              },
+              "color": "apron",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 70,
+                "y": 100,
+                "width": 2,
+                "height": 3
+              },
+              "color": "apron-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 72,
+                "y": 100,
+                "width": 16,
+                "height": 3
+              },
+              "color": "apron",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 88,
+                "y": 100,
+                "width": 2,
+                "height": 3
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 90,
+                "y": 100,
+                "width": 4,
+                "height": 3
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 94,
+                "y": 100,
+                "width": 2,
+                "height": 3
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 96,
+                "y": 100,
+                "width": 2,
+                "height": 3
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 98,
+                "y": 100,
+                "width": 2,
+                "height": 3
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 100,
+                "y": 100,
+                "width": 2,
+                "height": 3
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 110,
+                "y": 100,
+                "width": 2,
+                "height": 3
+              },
+              "color": "hair-mid",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 112,
+                "y": 100,
+                "width": 8,
+                "height": 3
+              },
+              "color": "hair-light",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 120,
+                "y": 100,
+                "width": 2,
+                "height": 3
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "shift",
+              "region": "skirt-middle",
+              "dx": 0,
+              "dy": -5,
+              "note": "Lift skirt-middle 5px; distribute bending across the skirt."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 10,
+                "y": 143,
+                "width": 6,
+                "height": 2
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 16,
+                "y": 143,
+                "width": 6,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 22,
+                "y": 143,
+                "width": 10,
+                "height": 2
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 32,
+                "y": 143,
+                "width": 2,
+                "height": 2
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 34,
+                "y": 143,
+                "width": 8,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 42,
+                "y": 143,
+                "width": 40,
+                "height": 2
+              },
+              "color": "apron",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 82,
+                "y": 143,
+                "width": 6,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 88,
+                "y": 143,
+                "width": 2,
+                "height": 2
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 90,
+                "y": 143,
+                "width": 4,
+                "height": 2
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 94,
+                "y": 143,
+                "width": 6,
+                "height": 2
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 100,
+                "y": 143,
+                "width": 6,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 106,
+                "y": 143,
+                "width": 2,
+                "height": 2
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 108,
+                "y": 143,
+                "width": 4,
+                "height": 2
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 112,
+                "y": 143,
+                "width": 4,
+                "height": 2
+              },
+              "color": "hair-mid",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 116,
+                "y": 143,
+                "width": 6,
+                "height": 2
+              },
+              "color": "hair-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 122,
+                "y": 143,
+                "width": 2,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "shift",
+              "region": "skirt-lower",
+              "dx": 0,
+              "dy": -3,
+              "note": "Lift skirt-lower 3px; distribute bending across the skirt."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 44,
+                "y": 169,
+                "width": 4,
+                "height": 3
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 54,
+                "y": 169,
+                "width": 2,
+                "height": 3
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 56,
+                "y": 169,
+                "width": 4,
+                "height": 3
+              },
+              "color": "stocking",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 60,
+                "y": 169,
+                "width": 2,
+                "height": 3
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 62,
+                "y": 169,
+                "width": 4,
+                "height": 3
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 66,
+                "y": 169,
+                "width": 6,
+                "height": 3
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 72,
+                "y": 169,
+                "width": 8,
+                "height": 3
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            }
+          ]
+        },
+        {
+          "note": "2: Lower into the greeting; upper body 6px above master, feet unchanged.",
+          "ops": [
+            {
+              "type": "shift",
+              "region": "upper",
+              "dx": 0,
+              "dy": -6,
+              "note": "Lift upper 6px; distribute bending across the skirt."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 22,
+                "y": 102,
+                "width": 6,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 28,
+                "y": 102,
+                "width": 2,
+                "height": 2
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 30,
+                "y": 102,
+                "width": 4,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 34,
+                "y": 102,
+                "width": 16,
+                "height": 2
+              },
+              "color": "apron",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 50,
+                "y": 102,
+                "width": 2,
+                "height": 2
+              },
+              "color": "apron-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 52,
+                "y": 102,
+                "width": 18,
+                "height": 2
+              },
+              "color": "apron",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 70,
+                "y": 102,
+                "width": 2,
+                "height": 2
+              },
+              "color": "apron-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 72,
+                "y": 102,
+                "width": 16,
+                "height": 2
+              },
+              "color": "apron",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 88,
+                "y": 102,
+                "width": 2,
+                "height": 2
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 90,
+                "y": 102,
+                "width": 4,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 94,
+                "y": 102,
+                "width": 2,
+                "height": 2
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 96,
+                "y": 102,
+                "width": 2,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 98,
+                "y": 102,
+                "width": 2,
+                "height": 2
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 100,
+                "y": 102,
+                "width": 2,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 110,
+                "y": 102,
+                "width": 2,
+                "height": 2
+              },
+              "color": "hair-mid",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 112,
+                "y": 102,
+                "width": 8,
+                "height": 2
+              },
+              "color": "hair-light",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 120,
+                "y": 102,
+                "width": 2,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "shift",
+              "region": "skirt-middle",
+              "dx": 0,
+              "dy": -4,
+              "note": "Lift skirt-middle 4px; distribute bending across the skirt."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 10,
+                "y": 144,
+                "width": 6,
+                "height": 2
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 16,
+                "y": 144,
+                "width": 6,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 22,
+                "y": 144,
+                "width": 10,
+                "height": 2
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 32,
+                "y": 144,
+                "width": 2,
+                "height": 2
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 34,
+                "y": 144,
+                "width": 8,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 42,
+                "y": 144,
+                "width": 40,
+                "height": 2
+              },
+              "color": "apron",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 82,
+                "y": 144,
+                "width": 6,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 88,
+                "y": 144,
+                "width": 2,
+                "height": 2
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 90,
+                "y": 144,
+                "width": 4,
+                "height": 2
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 94,
+                "y": 144,
+                "width": 6,
+                "height": 2
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 100,
+                "y": 144,
+                "width": 6,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 106,
+                "y": 144,
+                "width": 2,
+                "height": 2
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 108,
+                "y": 144,
+                "width": 4,
+                "height": 2
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 112,
+                "y": 144,
+                "width": 4,
+                "height": 2
+              },
+              "color": "hair-mid",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 116,
+                "y": 144,
+                "width": 6,
+                "height": 2
+              },
+              "color": "hair-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 122,
+                "y": 144,
+                "width": 2,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "shift",
+              "region": "skirt-lower",
+              "dx": 0,
+              "dy": -2,
+              "note": "Lift skirt-lower 2px; distribute bending across the skirt."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 44,
+                "y": 170,
+                "width": 4,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 54,
+                "y": 170,
+                "width": 2,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 56,
+                "y": 170,
+                "width": 4,
+                "height": 2
+              },
+              "color": "stocking",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 60,
+                "y": 170,
+                "width": 2,
+                "height": 2
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 62,
+                "y": 170,
+                "width": 4,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 66,
+                "y": 170,
+                "width": 6,
+                "height": 2
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 72,
+                "y": 170,
+                "width": 8,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            }
+          ]
+        },
+        {
+          "note": "3: Lower into the greeting; upper body 2px above master, feet unchanged.",
+          "ops": [
+            {
+              "type": "shift",
+              "region": "upper",
+              "dx": 0,
+              "dy": -2,
+              "note": "Lift upper 2px; distribute bending across the skirt."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 22,
+                "y": 106,
+                "width": 6,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 28,
+                "y": 106,
+                "width": 2,
+                "height": 1
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 30,
+                "y": 106,
+                "width": 4,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 34,
+                "y": 106,
+                "width": 16,
+                "height": 1
+              },
+              "color": "apron",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 50,
+                "y": 106,
+                "width": 2,
+                "height": 1
+              },
+              "color": "apron-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 52,
+                "y": 106,
+                "width": 18,
+                "height": 1
+              },
+              "color": "apron",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 70,
+                "y": 106,
+                "width": 2,
+                "height": 1
+              },
+              "color": "apron-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 72,
+                "y": 106,
+                "width": 16,
+                "height": 1
+              },
+              "color": "apron",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 88,
+                "y": 106,
+                "width": 2,
+                "height": 1
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 90,
+                "y": 106,
+                "width": 4,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 94,
+                "y": 106,
+                "width": 2,
+                "height": 1
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 96,
+                "y": 106,
+                "width": 2,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 98,
+                "y": 106,
+                "width": 2,
+                "height": 1
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 100,
+                "y": 106,
+                "width": 2,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 110,
+                "y": 106,
+                "width": 2,
+                "height": 1
+              },
+              "color": "hair-mid",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 112,
+                "y": 106,
+                "width": 8,
+                "height": 1
+              },
+              "color": "hair-light",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 120,
+                "y": 106,
+                "width": 2,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "shift",
+              "region": "skirt-middle",
+              "dx": 0,
+              "dy": -1,
+              "note": "Lift skirt-middle 1px; distribute bending across the skirt."
+            },
+            {
+              "type": "shift",
+              "region": "skirt-lower",
+              "dx": 0,
+              "dy": -1,
+              "note": "Lift skirt-lower 1px; distribute bending across the skirt."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 44,
+                "y": 171,
+                "width": 4,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 54,
+                "y": 171,
+                "width": 2,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 56,
+                "y": 171,
+                "width": 4,
+                "height": 1
+              },
+              "color": "stocking",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 60,
+                "y": 171,
+                "width": 2,
+                "height": 1
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 62,
+                "y": 171,
+                "width": 4,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 66,
+                "y": 171,
+                "width": 6,
+                "height": 1
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 72,
+                "y": 171,
+                "width": 8,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            }
+          ]
+        },
+        {
+          "note": "4: Hold the full greeting; upper body 0px above master, feet unchanged.",
+          "ops": []
+        },
+        {
+          "note": "5: Hold the full greeting; upper body 0px above master, feet unchanged.",
+          "ops": []
+        },
+        {
+          "note": "6: Hold the full greeting; upper body 0px above master, feet unchanged.",
+          "ops": []
+        },
+        {
+          "note": "7: Recover toward idle; upper body 1px above master, feet unchanged.",
+          "ops": [
+            {
+              "type": "shift",
+              "region": "upper",
+              "dx": 0,
+              "dy": -1,
+              "note": "Lift upper 1px; distribute bending across the skirt."
+            },
+            {
+              "type": "shift",
+              "region": "skirt-middle",
+              "dx": 0,
+              "dy": -1,
+              "note": "Lift skirt-middle 1px; distribute bending across the skirt."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 10,
+                "y": 147,
+                "width": 6,
+                "height": 1
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 16,
+                "y": 147,
+                "width": 6,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 22,
+                "y": 147,
+                "width": 10,
+                "height": 1
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 32,
+                "y": 147,
+                "width": 2,
+                "height": 1
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 34,
+                "y": 147,
+                "width": 8,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 42,
+                "y": 147,
+                "width": 40,
+                "height": 1
+              },
+              "color": "apron",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 82,
+                "y": 147,
+                "width": 6,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 88,
+                "y": 147,
+                "width": 2,
+                "height": 1
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 90,
+                "y": 147,
+                "width": 4,
+                "height": 1
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 94,
+                "y": 147,
+                "width": 6,
+                "height": 1
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 100,
+                "y": 147,
+                "width": 6,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 106,
+                "y": 147,
+                "width": 2,
+                "height": 1
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 108,
+                "y": 147,
+                "width": 4,
+                "height": 1
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 112,
+                "y": 147,
+                "width": 4,
+                "height": 1
+              },
+              "color": "hair-mid",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 116,
+                "y": 147,
+                "width": 6,
+                "height": 1
+              },
+              "color": "hair-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 122,
+                "y": 147,
+                "width": 2,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            }
+          ]
+        },
+        {
+          "note": "8: Recover toward idle; upper body 3px above master, feet unchanged.",
+          "ops": [
+            {
+              "type": "shift",
+              "region": "upper",
+              "dx": 0,
+              "dy": -3,
+              "note": "Lift upper 3px; distribute bending across the skirt."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 22,
+                "y": 105,
+                "width": 6,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 28,
+                "y": 105,
+                "width": 2,
+                "height": 1
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 30,
+                "y": 105,
+                "width": 4,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 34,
+                "y": 105,
+                "width": 16,
+                "height": 1
+              },
+              "color": "apron",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 50,
+                "y": 105,
+                "width": 2,
+                "height": 1
+              },
+              "color": "apron-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 52,
+                "y": 105,
+                "width": 18,
+                "height": 1
+              },
+              "color": "apron",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 70,
+                "y": 105,
+                "width": 2,
+                "height": 1
+              },
+              "color": "apron-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 72,
+                "y": 105,
+                "width": 16,
+                "height": 1
+              },
+              "color": "apron",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 88,
+                "y": 105,
+                "width": 2,
+                "height": 1
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 90,
+                "y": 105,
+                "width": 4,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 94,
+                "y": 105,
+                "width": 2,
+                "height": 1
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 96,
+                "y": 105,
+                "width": 2,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 98,
+                "y": 105,
+                "width": 2,
+                "height": 1
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 100,
+                "y": 105,
+                "width": 2,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 110,
+                "y": 105,
+                "width": 2,
+                "height": 1
+              },
+              "color": "hair-mid",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 112,
+                "y": 105,
+                "width": 8,
+                "height": 1
+              },
+              "color": "hair-light",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 120,
+                "y": 105,
+                "width": 2,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "shift",
+              "region": "skirt-middle",
+              "dx": 0,
+              "dy": -2,
+              "note": "Lift skirt-middle 2px; distribute bending across the skirt."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 10,
+                "y": 146,
+                "width": 6,
+                "height": 1
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 16,
+                "y": 146,
+                "width": 6,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 22,
+                "y": 146,
+                "width": 10,
+                "height": 1
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 32,
+                "y": 146,
+                "width": 2,
+                "height": 1
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 34,
+                "y": 146,
+                "width": 8,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 42,
+                "y": 146,
+                "width": 40,
+                "height": 1
+              },
+              "color": "apron",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 82,
+                "y": 146,
+                "width": 6,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 88,
+                "y": 146,
+                "width": 2,
+                "height": 1
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 90,
+                "y": 146,
+                "width": 4,
+                "height": 1
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 94,
+                "y": 146,
+                "width": 6,
+                "height": 1
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 100,
+                "y": 146,
+                "width": 6,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 106,
+                "y": 146,
+                "width": 2,
+                "height": 1
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 108,
+                "y": 146,
+                "width": 4,
+                "height": 1
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 112,
+                "y": 146,
+                "width": 4,
+                "height": 1
+              },
+              "color": "hair-mid",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 116,
+                "y": 146,
+                "width": 6,
+                "height": 1
+              },
+              "color": "hair-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 122,
+                "y": 146,
+                "width": 2,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "shift",
+              "region": "skirt-lower",
+              "dx": 0,
+              "dy": -1,
+              "note": "Lift skirt-lower 1px; distribute bending across the skirt."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 44,
+                "y": 171,
+                "width": 4,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 54,
+                "y": 171,
+                "width": 2,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 56,
+                "y": 171,
+                "width": 4,
+                "height": 1
+              },
+              "color": "stocking",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 60,
+                "y": 171,
+                "width": 2,
+                "height": 1
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 62,
+                "y": 171,
+                "width": 4,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 66,
+                "y": 171,
+                "width": 6,
+                "height": 1
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 72,
+                "y": 171,
+                "width": 8,
+                "height": 1
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            }
+          ]
+        },
+        {
+          "note": "9: Recover toward idle; upper body 6px above master, feet unchanged.",
+          "ops": [
+            {
+              "type": "shift",
+              "region": "upper",
+              "dx": 0,
+              "dy": -6,
+              "note": "Lift upper 6px; distribute bending across the skirt."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 22,
+                "y": 102,
+                "width": 6,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 28,
+                "y": 102,
+                "width": 2,
+                "height": 2
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 30,
+                "y": 102,
+                "width": 4,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 34,
+                "y": 102,
+                "width": 16,
+                "height": 2
+              },
+              "color": "apron",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 50,
+                "y": 102,
+                "width": 2,
+                "height": 2
+              },
+              "color": "apron-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 52,
+                "y": 102,
+                "width": 18,
+                "height": 2
+              },
+              "color": "apron",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 70,
+                "y": 102,
+                "width": 2,
+                "height": 2
+              },
+              "color": "apron-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 72,
+                "y": 102,
+                "width": 16,
+                "height": 2
+              },
+              "color": "apron",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 88,
+                "y": 102,
+                "width": 2,
+                "height": 2
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 90,
+                "y": 102,
+                "width": 4,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 94,
+                "y": 102,
+                "width": 2,
+                "height": 2
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 96,
+                "y": 102,
+                "width": 2,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 98,
+                "y": 102,
+                "width": 2,
+                "height": 2
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 100,
+                "y": 102,
+                "width": 2,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 110,
+                "y": 102,
+                "width": 2,
+                "height": 2
+              },
+              "color": "hair-mid",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 112,
+                "y": 102,
+                "width": 8,
+                "height": 2
+              },
+              "color": "hair-light",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 120,
+                "y": 102,
+                "width": 2,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "shift",
+              "region": "skirt-middle",
+              "dx": 0,
+              "dy": -4,
+              "note": "Lift skirt-middle 4px; distribute bending across the skirt."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 10,
+                "y": 144,
+                "width": 6,
+                "height": 2
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 16,
+                "y": 144,
+                "width": 6,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 22,
+                "y": 144,
+                "width": 10,
+                "height": 2
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 32,
+                "y": 144,
+                "width": 2,
+                "height": 2
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 34,
+                "y": 144,
+                "width": 8,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 42,
+                "y": 144,
+                "width": 40,
+                "height": 2
+              },
+              "color": "apron",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 82,
+                "y": 144,
+                "width": 6,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 88,
+                "y": 144,
+                "width": 2,
+                "height": 2
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 90,
+                "y": 144,
+                "width": 4,
+                "height": 2
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 94,
+                "y": 144,
+                "width": 6,
+                "height": 2
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 100,
+                "y": 144,
+                "width": 6,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 106,
+                "y": 144,
+                "width": 2,
+                "height": 2
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 108,
+                "y": 144,
+                "width": 4,
+                "height": 2
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 112,
+                "y": 144,
+                "width": 4,
+                "height": 2
+              },
+              "color": "hair-mid",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 116,
+                "y": 144,
+                "width": 6,
+                "height": 2
+              },
+              "color": "hair-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 122,
+                "y": 144,
+                "width": 2,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "shift",
+              "region": "skirt-lower",
+              "dx": 0,
+              "dy": -2,
+              "note": "Lift skirt-lower 2px; distribute bending across the skirt."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 44,
+                "y": 170,
+                "width": 4,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 54,
+                "y": 170,
+                "width": 2,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 56,
+                "y": 170,
+                "width": 4,
+                "height": 2
+              },
+              "color": "stocking",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 60,
+                "y": 170,
+                "width": 2,
+                "height": 2
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 62,
+                "y": 170,
+                "width": 4,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 66,
+                "y": 170,
+                "width": 6,
+                "height": 2
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 72,
+                "y": 170,
+                "width": 8,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            }
+          ]
+        },
+        {
+          "note": "10: Recover toward idle; upper body 8px above master, feet unchanged.",
+          "ops": [
+            {
+              "type": "shift",
+              "region": "upper",
+              "dx": 0,
+              "dy": -8,
+              "note": "Lift upper 8px; distribute bending across the skirt."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 22,
+                "y": 100,
+                "width": 6,
+                "height": 3
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 28,
+                "y": 100,
+                "width": 2,
+                "height": 3
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 30,
+                "y": 100,
+                "width": 4,
+                "height": 3
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 34,
+                "y": 100,
+                "width": 16,
+                "height": 3
+              },
+              "color": "apron",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 50,
+                "y": 100,
+                "width": 2,
+                "height": 3
+              },
+              "color": "apron-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 52,
+                "y": 100,
+                "width": 18,
+                "height": 3
+              },
+              "color": "apron",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 70,
+                "y": 100,
+                "width": 2,
+                "height": 3
+              },
+              "color": "apron-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 72,
+                "y": 100,
+                "width": 16,
+                "height": 3
+              },
+              "color": "apron",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 88,
+                "y": 100,
+                "width": 2,
+                "height": 3
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 90,
+                "y": 100,
+                "width": 4,
+                "height": 3
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 94,
+                "y": 100,
+                "width": 2,
+                "height": 3
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 96,
+                "y": 100,
+                "width": 2,
+                "height": 3
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 98,
+                "y": 100,
+                "width": 2,
+                "height": 3
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 100,
+                "y": 100,
+                "width": 2,
+                "height": 3
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 110,
+                "y": 100,
+                "width": 2,
+                "height": 3
+              },
+              "color": "hair-mid",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 112,
+                "y": 100,
+                "width": 8,
+                "height": 3
+              },
+              "color": "hair-light",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 120,
+                "y": 100,
+                "width": 2,
+                "height": 3
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "shift",
+              "region": "skirt-middle",
+              "dx": 0,
+              "dy": -5,
+              "note": "Lift skirt-middle 5px; distribute bending across the skirt."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 10,
+                "y": 143,
+                "width": 6,
+                "height": 2
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 16,
+                "y": 143,
+                "width": 6,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 22,
+                "y": 143,
+                "width": 10,
+                "height": 2
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 32,
+                "y": 143,
+                "width": 2,
+                "height": 2
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 34,
+                "y": 143,
+                "width": 8,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 42,
+                "y": 143,
+                "width": 40,
+                "height": 2
+              },
+              "color": "apron",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 82,
+                "y": 143,
+                "width": 6,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 88,
+                "y": 143,
+                "width": 2,
+                "height": 2
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 90,
+                "y": 143,
+                "width": 4,
+                "height": 2
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 94,
+                "y": 143,
+                "width": 6,
+                "height": 2
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 100,
+                "y": 143,
+                "width": 6,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 106,
+                "y": 143,
+                "width": 2,
+                "height": 2
+              },
+              "color": "dress-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 108,
+                "y": 143,
+                "width": 4,
+                "height": 2
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 112,
+                "y": 143,
+                "width": 4,
+                "height": 2
+              },
+              "color": "hair-mid",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 116,
+                "y": 143,
+                "width": 6,
+                "height": 2
+              },
+              "color": "hair-shadow",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 122,
+                "y": 143,
+                "width": 2,
+                "height": 2
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "shift",
+              "region": "skirt-lower",
+              "dx": 0,
+              "dy": -3,
+              "note": "Lift skirt-lower 3px; distribute bending across the skirt."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 44,
+                "y": 169,
+                "width": 4,
+                "height": 3
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 54,
+                "y": 169,
+                "width": 2,
+                "height": 3
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 56,
+                "y": 169,
+                "width": 4,
+                "height": 3
+              },
+              "color": "stocking",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 60,
+                "y": 169,
+                "width": 2,
+                "height": 3
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 62,
+                "y": 169,
+                "width": 4,
+                "height": 3
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 66,
+                "y": 169,
+                "width": 6,
+                "height": 3
+              },
+              "color": "dress",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            },
+            {
+              "type": "rect",
+              "region": {
+                "x": 72,
+                "y": 169,
+                "width": 8,
+                "height": 3
+              },
+              "color": "outline",
+              "note": "Bridge adjacent skirt bands with a short material run; preserve transparent gaps."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

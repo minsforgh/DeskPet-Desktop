@@ -1,0 +1,10 @@
+{
+  "id": "claude-code",
+  "name": "Claude Code",
+  "version": "0.0.0",
+  "apiVersion": "2",
+  "entry": "dist/index.js",
+  "description": "Claude Code hook reaction rules.",
+  "permissions": {},
+  "contributes": { "lines": "lines.json" }
+}

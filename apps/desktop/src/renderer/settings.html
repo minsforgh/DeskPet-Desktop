@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src data:" />
+    <title>DeskPet 설정</title>
+    <link rel="stylesheet" href="./settings.css" />
+  </head>
+  <body>
+    <nav id="tabs">
+      <button type="button" id="tab-general" class="tab" aria-selected="true">일반</button>
+      <button type="button" id="tab-character" class="tab" aria-selected="false">캐릭터</button>
+      <button type="button" id="tab-reminders" class="tab" aria-selected="false">알림</button>
+      <button type="button" id="tab-plugins" class="tab" aria-selected="false">플러그인</button>
+    </nav>
+    <main>
+      <section id="general"></section>
+      <section id="character" hidden>
+        <div class="character-layout">
+          <aside id="pack-list" aria-label="캐릭터 팩 목록"></aside>
+          <div class="character-detail">
+            <div id="pack-header"></div>
+            <p id="pack-status" class="status" role="status"></p>
+            <nav id="character-tabs" aria-label="캐릭터 설정">
+              <button type="button" id="character-tab-voice" class="tab" aria-selected="true">어투</button>
+              <button type="button" id="character-tab-interactions" class="tab" aria-selected="false">상호작용</button>
+              <button type="button" id="character-tab-sequences" class="tab" aria-selected="false">동작</button>
+              <button type="button" id="character-tab-reactions" class="tab" aria-selected="false">알림 반응</button>
+              <button type="button" id="character-tab-motions" class="tab" aria-selected="false">이동</button>
+              <button type="button" id="character-tab-behavior" class="tab" aria-selected="false">행동</button>
+              <button type="button" id="character-tab-sheets" class="tab" aria-selected="false" hidden>애니메이션</button>
+              <button type="button" id="character-tab-info" class="tab" aria-selected="false">정보</button>
+            </nav>
+            <section id="voice"></section>
+            <section id="interactions" hidden></section>
+            <section id="sequences" hidden></section>
+            <section id="reactions" hidden></section>
+            <section id="motions" hidden></section>
+            <section id="behavior" hidden></section>
+            <section id="sheets" hidden></section>
+            <section id="pack-info" hidden></section>
+          </div>
+        </div>
+      </section>
+      <section id="reminders" hidden></section>
+      <section id="plugins" hidden></section>
+    </main>
+    <script type="module" src="./settings.ts"></script>
+  </body>
+</html>

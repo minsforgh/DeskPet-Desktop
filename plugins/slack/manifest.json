@@ -1,0 +1,15 @@
+{
+  "id": "slack",
+  "name": "Slack",
+  "version": "0.0.0",
+  "apiVersion": "2",
+  "entry": "dist/index.js",
+  "description": "Slack 메시지를 읽어 알림으로 표시합니다.",
+  "permissions": {
+    "network": ["slack.com"],
+    "socketMode": ["slack.com"],
+    "secrets": true,
+    "openExternal": ["https://app.slack.com/client/*"]
+  },
+  "contributes": { "actions": ["slack.open"], "badges": ["slack.status"], "lines": "lines.json" }
+}

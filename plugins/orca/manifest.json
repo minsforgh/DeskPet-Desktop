@@ -1,0 +1,11 @@
+{
+  "id": "orca",
+  "name": "Orca",
+  "version": "0.0.0",
+  "apiVersion": "2",
+  "entry": "dist/index.js",
+  "description": "Orca 작업 상태와 확인 요청을 알려줍니다",
+  "permissions": { "orcaRead": true, "orcaGateResolve": true, "orcaOpenTerminal": true },
+  "contributes": { "actions": ["orca.resolve", "orca.open", "orca.review", "orca.mute"],
+    "trayItems": ["orca.review"], "badges": ["orca.status"], "lines": "lines.json" }
+}

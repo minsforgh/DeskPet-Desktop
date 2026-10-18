@@ -1,0 +1,717 @@
+{
+  "version": 1,
+  "templates": {
+    "done": [
+      {
+        "prefix": "주인님,",
+        "content": "{task}",
+        "suffix": "완료입니다!"
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{task} 마쳤습니다.",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{task} 끝났어요!",
+        "suffix": "확인해 주세요"
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{folder} 작업이 끝났어요.",
+        "suffix": "수고하셨어요!"
+      }
+    ],
+    "waiting": [
+      {
+        "prefix": "주인님,",
+        "content": "여쭤볼 게 있어요. {message}",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "확인이 필요해요. {message}",
+        "suffix": ""
+      }
+    ],
+    "failed": [
+      {
+        "prefix": "죄송해요, 주인님…",
+        "content": "{task} 잘 안 됐어요. {result}",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{task} 중에 문제가 생겼어요. {result}",
+        "suffix": ""
+      },
+      {
+        "prefix": "죄송해요, 주인님…",
+        "content": "{task} 잘 안 됐어요.",
+        "suffix": "다시 확인해 주세요"
+      },
+      {
+        "prefix": "죄송해요, 주인님…",
+        "content": "{folder} 작업에 문제가 생겼어요.",
+        "suffix": "확인해 주세요"
+      }
+    ],
+    "info": [
+      {
+        "prefix": "주인님,",
+        "content": "알려 드릴 게 있어요. {message}",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "잠시 말씀드릴게요. {message}",
+        "suffix": ""
+      }
+    ],
+    "deadline": [
+      {
+        "prefix": "주인님,",
+        "content": "서둘러 주세요! {message}",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "시간이 얼마 안 남았어요. {message}",
+        "suffix": ""
+      }
+    ],
+    "reminder": [
+      {
+        "prefix": "주인님,",
+        "content": "시간이에요. {message}",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "잊지 않으셨죠? {message}",
+        "suffix": ""
+      }
+    ],
+    "alert": [
+      {
+        "prefix": "주인님,",
+        "content": "확인해 주세요. {message}",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "문제가 생겼어요. {message}",
+        "suffix": ""
+      }
+    ]
+  },
+  "lines": {
+    "jungle.login-lost": [
+      {
+        "prefix": "주인님,",
+        "content": "LMS 로그인이 풀렸어요.",
+        "suffix": "확인해 주세요"
+      },
+      {
+        "prefix": "주인님,",
+        "content": "LMS 로그인이 만료된 것 같아요",
+        "suffix": ""
+      }
+    ],
+    "jungle.no-cohort": [
+      {
+        "prefix": "주인님,",
+        "content": "활성 기수가 없어요",
+        "suffix": ""
+      }
+    ],
+    "jungle.check-error": [
+      {
+        "prefix": "주인님,",
+        "content": "출석 상태를 확인할 수 없어요",
+        "suffix": ""
+      },
+      {
+        "prefix": "죄송해요, 주인님,",
+        "content": "출석 상태를 확인하지 못했어요",
+        "suffix": ""
+      }
+    ],
+    "jungle.login-recovered": [
+      {
+        "prefix": "주인님,",
+        "content": "로그인 확인했어요. 이제 출석을 지켜볼게요",
+        "suffix": ""
+      }
+    ],
+    "jungle.start-deadline": [
+      {
+        "prefix": "주인님,",
+        "content": "학습 시작 아직이에요! 10시까지 {minutes}분이에요",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "학습 시작 10시까지 {minutes}분 남았어요.",
+        "suffix": "서둘러 주세요!"
+      }
+    ],
+    "jungle.start-grace": [
+      {
+        "prefix": "주인님,",
+        "content": "지금 누르면 아직 괜찮아요!",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "지금 시작을 누르셔도 아직 늦지 않았어요",
+        "suffix": ""
+      }
+    ],
+    "jungle.end-open": [
+      {
+        "prefix": "주인님,",
+        "content": "이제 학습 종료를 누를 수 있어요",
+        "suffix": ""
+      }
+    ],
+    "jungle.end-deadline": [
+      {
+        "prefix": "주인님,",
+        "content": "04시 전에 학습 종료! {minutes}분 남았어요",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "시간이 얼마 안 남았어요. 04시 전에 학습 종료! ({minutes}분)",
+        "suffix": ""
+      }
+    ],
+    "jungle.attendance-complete": [
+      {
+        "prefix": "주인님,",
+        "content": "오늘 출석까지 마쳤어요.",
+        "suffix": "수고하셨어요!"
+      }
+    ],
+    "jungle.manual-login-lost": [
+      {
+        "prefix": "주인님,",
+        "content": "LMS 로그인이 풀렸어요.",
+        "suffix": "확인해 주세요"
+      }
+    ],
+    "jungle.manual-no-cohort": [
+      {
+        "prefix": "주인님,",
+        "content": "활성 기수가 없는 것 같아요",
+        "suffix": ""
+      }
+    ],
+    "jungle.manual-error": [
+      {
+        "prefix": "죄송해요, 주인님,",
+        "content": "출석 상태를 확인할 수 없어요",
+        "suffix": ""
+      }
+    ],
+    "jungle.manual-before-start": [
+      {
+        "prefix": "주인님,",
+        "content": "아직 학습 시작 전이에요. 10시까지 {remaining} 남았어요",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "시간이 얼마 안 남았어요. 학습 시작 10시까지 {remaining}",
+        "suffix": ""
+      }
+    ],
+    "jungle.manual-start-overdue": [
+      {
+        "prefix": "주인님,",
+        "content": "오늘 학습 시작을 놓쳤어요",
+        "suffix": ""
+      },
+      {
+        "prefix": "안타깝지만, 주인님,",
+        "content": "오늘 학습 시작을 놓친 것 같아요",
+        "suffix": ""
+      }
+    ],
+    "jungle.manual-start-grace": [
+      {
+        "prefix": "주인님,",
+        "content": "학습 시작이 늦었어요! 지금 누르면 아직 괜찮아요",
+        "suffix": ""
+      }
+    ],
+    "jungle.manual-studying": [
+      {
+        "prefix": "주인님,",
+        "content": "학습 중이에요. 종료는 23시부터 누를 수 있어요({remaining} 뒤)",
+        "suffix": ""
+      }
+    ],
+    "jungle.manual-end-open": [
+      {
+        "prefix": "주인님,",
+        "content": "학습 종료를 누를 수 있어요. 04시까지 {remaining} 남았어요",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "이제 학습 종료예요. 04시까지 {remaining} 남았어요",
+        "suffix": ""
+      }
+    ],
+    "jungle.manual-complete": [
+      {
+        "prefix": "주인님,",
+        "content": "오늘 출석을 마쳤어요",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "오늘 출석까지 끝났어요.",
+        "suffix": "안심하세요"
+      }
+    ],
+    "orca.unavailable": [
+      {
+        "prefix": "주인님,",
+        "content": "Orca 상태를 확인할 수 없어요",
+        "suffix": ""
+      }
+    ],
+    "orca.worker-succeeded": [
+      {
+        "prefix": "주인님,",
+        "content": "{task} 끝났어요",
+        "suffix": "완료입니다!"
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{task} 마쳤어요!",
+        "suffix": ""
+      }
+    ],
+    "orca.worker-failed": [
+      {
+        "prefix": "죄송해요, 주인님…",
+        "content": "{task} 실패했어요",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{task} 마치지 못했어요",
+        "suffix": ""
+      }
+    ],
+    "orca.worker-exited": [
+      {
+        "prefix": "주인님,",
+        "content": "{task}이 멈춘 것 같아요",
+        "suffix": ""
+      },
+      {
+        "prefix": "걱정돼요, 주인님,",
+        "content": "{task}이 멈춘 것 같아요",
+        "suffix": ""
+      }
+    ],
+    "orca.coordinator-waiting": [
+      {
+        "prefix": "주인님,",
+        "content": "{task}에서 저를 기다리고 있어요",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{task}에서 기다리고 있어요.",
+        "suffix": "가 봐 주세요"
+      }
+    ],
+    "orca.gate-pending": [
+      {
+        "prefix": "주인님,",
+        "content": "{task} 확인이 필요해요",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "여쭤볼 게 있어요. {task} 확인이 필요해요",
+        "suffix": ""
+      }
+    ],
+    "orca.escalation": [
+      {
+        "prefix": "주인님,",
+        "content": "{task}에서 문제가 생겼어요",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{task}에서 문제가 생겼어요.",
+        "suffix": "확인해 주세요"
+      }
+    ],
+    "orca.question": [
+      {
+        "prefix": "주인님,",
+        "content": "{task} 질문이 왔어요",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{task} 질문이 도착했어요.",
+        "suffix": "확인해 주세요"
+      }
+    ],
+    "orca.gate-decided": [
+      {
+        "prefix": "주인님,",
+        "content": "결정했어요",
+        "suffix": ""
+      },
+      {
+        "prefix": "알겠습니다, 주인님,",
+        "content": "결정을 전달했어요",
+        "suffix": ""
+      }
+    ],
+    "orca.gate-already": [
+      {
+        "prefix": "주인님,",
+        "content": "이미 처리된 확인이에요",
+        "suffix": ""
+      }
+    ],
+    "orca.gate-unknown": [
+      {
+        "prefix": "죄송해요, 주인님,",
+        "content": "승인 결과를 확인하지 못했어요",
+        "suffix": ""
+      }
+    ],
+    "reminders.rule": [
+      {
+        "prefix": "주인님,",
+        "content": "시간이에요. {message}",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "잊지 않으셨죠? {message}",
+        "suffix": ""
+      }
+    ],
+    "claude-code.done-task-result": [
+      {
+        "prefix": "주인님,",
+        "content": "{folder}에서 {task} → {result}",
+        "suffix": "완료입니다!"
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{folder}: {task} → {result} 마쳤어요",
+        "suffix": ""
+      }
+    ],
+    "claude-code.done-task": [
+      {
+        "prefix": "주인님,",
+        "content": "{folder}에서 {task}",
+        "suffix": "완료입니다!"
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{folder}: {task} 마쳤어요",
+        "suffix": ""
+      }
+    ],
+    "claude-code.done-result": [
+      {
+        "prefix": "주인님,",
+        "content": "{folder}에서 {result}",
+        "suffix": "확인해 주세요"
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{folder}: {result} 나왔어요",
+        "suffix": ""
+      }
+    ],
+    "claude-code.done-default": [
+      {
+        "prefix": "주인님,",
+        "content": "{folder} 작업이 끝났어요",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{folder} 작업",
+        "suffix": "완료입니다!"
+      }
+    ],
+    "claude-code.waiting-message": [
+      {
+        "prefix": "주인님,",
+        "content": "{folder}에서 입력을 기다려요. {message}",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "여쭤볼 게 있어요. {folder}: {message}",
+        "suffix": ""
+      }
+    ],
+    "claude-code.waiting-default": [
+      {
+        "prefix": "주인님,",
+        "content": "{folder}이 입력을 기다려요",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{folder}에서 기다리고 있어요",
+        "suffix": ""
+      }
+    ],
+    "claude-code.failed-message": [
+      {
+        "prefix": "",
+        "content": "죄송해요, 주인님… {folder}: {message}",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{folder}에서 문제가 생겼어요. {message}",
+        "suffix": ""
+      }
+    ],
+    "claude-code.failed-default": [
+      {
+        "prefix": "주인님,",
+        "content": "{folder}이 입력을 기다려요",
+        "suffix": ""
+      }
+    ],
+    "claude-code.info-message": [
+      {
+        "prefix": "주인님,",
+        "content": "알려 드릴 게 있어요. {folder}: {message}",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{folder} 소식이에요. {message}",
+        "suffix": ""
+      }
+    ],
+    "claude-code.info-default": [
+      {
+        "prefix": "주인님,",
+        "content": "{folder}이 입력을 기다려요",
+        "suffix": ""
+      }
+    ],
+    "codex.done-task-result": [
+      {
+        "prefix": "주인님,",
+        "content": "{folder}에서 {task} → {result}",
+        "suffix": "완료입니다!"
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{folder}: {task} → {result} 마쳤어요",
+        "suffix": ""
+      }
+    ],
+    "codex.done-task": [
+      {
+        "prefix": "주인님,",
+        "content": "{folder}에서 {task}",
+        "suffix": "완료입니다!"
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{folder}: {task} 마쳤어요",
+        "suffix": ""
+      }
+    ],
+    "codex.done-result": [
+      {
+        "prefix": "주인님,",
+        "content": "{folder}에서 {result}",
+        "suffix": "확인해 주세요"
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{folder}: {result} 나왔어요",
+        "suffix": ""
+      }
+    ],
+    "codex.done-default": [
+      {
+        "prefix": "주인님,",
+        "content": "{folder} 작업이 끝났어요",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{folder} 작업",
+        "suffix": "완료입니다!"
+      }
+    ],
+    "codex.waiting-message": [
+      {
+        "prefix": "주인님,",
+        "content": "{folder}에서 입력을 기다려요. {message}",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "여쭤볼 게 있어요. {folder}: {message}",
+        "suffix": ""
+      }
+    ],
+    "codex.waiting-default": [
+      {
+        "prefix": "주인님,",
+        "content": "{folder}이 입력을 기다려요",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{folder}에서 기다리고 있어요",
+        "suffix": ""
+      }
+    ],
+    "codex.failed-message": [
+      {
+        "prefix": "",
+        "content": "죄송해요, 주인님… {folder}: {message}",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{folder}에서 문제가 생겼어요. {message}",
+        "suffix": ""
+      }
+    ],
+    "codex.failed-default": [
+      {
+        "prefix": "주인님,",
+        "content": "{folder}이 입력을 기다려요",
+        "suffix": ""
+      }
+    ],
+    "codex.info-message": [
+      {
+        "prefix": "주인님,",
+        "content": "알려 드릴 게 있어요. {folder}: {message}",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{folder} 소식이에요. {message}",
+        "suffix": ""
+      }
+    ],
+    "codex.info-default": [
+      {
+        "prefix": "주인님,",
+        "content": "{folder}이 입력을 기다려요",
+        "suffix": ""
+      }
+    ],
+    "slack.mention": [
+      {
+        "prefix": "주인님,",
+        "content": "{sender} · {channel}\n{body}",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{channel}에서 {sender} 님이 멘션했어요\n{body}",
+        "suffix": ""
+      }
+    ],
+    "slack.mention-hidden": [
+      {
+        "prefix": "주인님,",
+        "content": "{sender} · {channel}",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{channel}에서 {sender} 님이 멘션했어요",
+        "suffix": ""
+      }
+    ],
+    "slack.dm": [
+      {
+        "prefix": "주인님,",
+        "content": "{sender} · {channel}\n{body}",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{sender} 님의 {channel} 메시지예요\n{body}",
+        "suffix": ""
+      }
+    ],
+    "slack.dm-hidden": [
+      {
+        "prefix": "주인님,",
+        "content": "{sender} · {channel}",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{sender} 님의 {channel} 메시지예요",
+        "suffix": ""
+      }
+    ],
+    "slack.channel": [
+      {
+        "prefix": "주인님,",
+        "content": "{sender} · {channel}\n{body}",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{channel}에 {sender} 님이 글을 남겼어요\n{body}",
+        "suffix": ""
+      }
+    ],
+    "slack.channel-hidden": [
+      {
+        "prefix": "주인님,",
+        "content": "{sender} · {channel}",
+        "suffix": ""
+      },
+      {
+        "prefix": "주인님,",
+        "content": "{channel}에 {sender} 님이 글을 남겼어요",
+        "suffix": ""
+      }
+    ],
+    "slack.token-required": [
+      {
+        "prefix": "주인님,",
+        "content": "Slack 토큰 확인이 필요해요",
+        "suffix": ""
+      }
+    ],
+    "slack.permission-required": [
+      {
+        "prefix": "주인님,",
+        "content": "Slack 권한이 부족해요",
+        "suffix": ""
+      }
+    ]
+  }
+}

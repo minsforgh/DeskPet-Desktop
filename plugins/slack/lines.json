@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "lines": [
+    { "id": "slack.mention", "label": "멘션", "kind": "alert", "variables": ["sender", "channel", "body"], "variants": ["{sender} · {channel}\n{body}"] },
+    { "id": "slack.mention-hidden", "label": "본문 숨긴 멘션", "kind": "alert", "variables": ["sender", "channel"], "variants": ["{sender} · {channel}"] },
+    { "id": "slack.dm", "label": "DM", "kind": "alert", "variables": ["sender", "channel", "body"], "variants": ["{sender} · {channel}\n{body}"] },
+    { "id": "slack.dm-hidden", "label": "본문 숨긴 DM", "kind": "alert", "variables": ["sender", "channel"], "variants": ["{sender} · {channel}"] },
+    { "id": "slack.channel", "label": "채널 메시지", "kind": "info", "variables": ["sender", "channel", "body"], "variants": ["{sender} · {channel}\n{body}"] },
+    { "id": "slack.channel-hidden", "label": "본문 숨긴 채널 메시지", "kind": "info", "variables": ["sender", "channel"], "variants": ["{sender} · {channel}"] },
+    { "id": "slack.token-required", "label": "토큰 확인 필요", "kind": "alert", "variables": [], "variants": ["Slack 토큰 확인 필요"] },
+    { "id": "slack.permission-required", "label": "권한 부족", "kind": "alert", "variables": [], "variants": ["Slack 권한 부족"] }
+  ]
+}

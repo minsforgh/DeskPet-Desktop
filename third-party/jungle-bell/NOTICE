@@ -1,0 +1,5 @@
+Jungle Bell
+https://github.com/YangSiJun528/jungle-bell
+Apache License, Version 2.0
+
+Historical attribution: an earlier private revision ported attendance phase logic and the LMS checker approach from Rust/Tauri to TypeScript/Electron. That revision was reverted before this public snapshot. This attribution and the historical license text are retained for transparency; see docs/PROVENANCE.md for the current implementation and scope.

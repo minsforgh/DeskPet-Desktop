@@ -1,0 +1,16 @@
+html, body { width: 100%; height: 100%; margin: 0; overflow: hidden; background: transparent; }
+canvas { display: block; width: 100%; height: 100%; }
+body.badge-above canvas { position: absolute; top: 70px; height: calc(100% - 70px); }
+body.badge-side canvas { position: absolute; left: 220px; width: calc(100% - 440px); }
+.badge-chip { position: absolute; z-index: 2; display: flex; align-items: center; gap: 4px; max-width: 170px;
+  box-sizing: border-box; padding: 3px 7px; border: 1px solid #655563; border-radius: 12px;
+  background: #fffafc; color: #302630; font: 600 11px/15px sans-serif; white-space: nowrap; cursor: default; }
+.badge-chip[hidden], .badge-tooltip[hidden] { display: none; }
+.badge-action { cursor: pointer; }
+.badge-dot { flex: none; width: 7px; height: 7px; border-radius: 50%; background: #e29a3f; }
+.badge-chip[data-tone="neutral"] .badge-dot { background: #8a8090; }
+.badge-tooltip { position: absolute; z-index: 3; max-width: 240px; box-sizing: border-box; padding: 5px 7px;
+  border: 1px solid #655563; border-radius: 6px; background: #fffafc; color: #302630;
+  font: 11px/16px sans-serif; white-space: pre-line; }
+.badge-tooltip-row { cursor: default; }
+.badge-tooltip-row.badge-action { cursor: pointer; }

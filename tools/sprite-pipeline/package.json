@@ -1,0 +1,20 @@
+{
+  "name": "@deskpet/sprite-pipeline",
+  "version": "0.0.0",
+  "private": true,
+  "description": "AI 생성물 후처리 스크립트",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json",
+    "generate": "node dist/generate.js",
+    "check": "node dist/check-cli.js",
+    "pixelize": "node dist/pixelize-cli.js",
+    "retouch": "node dist/retouch-cli.js",
+    "frames": "node dist/frames-cli.js",
+    "pack": "node dist/pack-cli.js"
+  },
+  "dependencies": {
+    "@deskpet/core": "workspace:*"
+  }
+}

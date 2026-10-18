@@ -1,0 +1,13 @@
+{
+  "name": "@deskpet/cli",
+  "version": "0.0.0",
+  "private": true,
+  "description": "deskpet 명령 (event, status)",
+  "type": "module",
+  "bin": { "deskpet": "./dist/index.js" },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": { "@deskpet/core": "workspace:*" }
+}

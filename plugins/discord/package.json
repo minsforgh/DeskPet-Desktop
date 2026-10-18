@@ -1,0 +1,11 @@
+{
+  "name": "@deskpet/plugin-discord",
+  "version": "0.0.0",
+  "private": true,
+  "description": "discord 플러그인",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "motions": {},
+  "landing": "soft",
+  "afterLand": { "play": "curtsy" }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "@deskpet/desktop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Electron 앱: 창, 트레이, 이벤트 서버, 플러그인 호스트 연결",
+  "type": "module",
+  "main": "./out/main/index.js",
+  "scripts": {
+    "build": "electron-vite build",
+    "typecheck": "tsc --noEmit",
+    "start": "electron .",
+    "start:dev": "electron . --dev-control=default"
+  },
+  "devDependencies": {
+    "@deskpet/core": "workspace:*",
+    "@deskpet/plugin-host": "workspace:*",
+    "@deskpet/plugin-sdk": "workspace:*"
+  },
+  "author": "DeskPet"
+}

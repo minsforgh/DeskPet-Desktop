@@ -1,0 +1,19 @@
+node_modules/
+dist/
+out/
+*.tsbuildinfo
+*.log
+.env
+.env.*
+.DS_Store
+.claude/settings.local.json
+release/
+
+# Local credentials and generated test directories
+*.pem
+*.key
+credentials.json
+plugin-secrets.json
+event-server.json
+coverage/
+retouch-test-*/

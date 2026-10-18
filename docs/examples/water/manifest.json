@@ -1,0 +1,13 @@
+{
+  "id": "water",
+  "name": "Water Reminder",
+  "version": "0.1.0",
+  "apiVersion": "1",
+  "entry": "dist/index.js",
+  "description": "일정 간격으로 물 마시기를 알려 주고 오늘 마신 잔 수를 세는 예제 플러그인",
+  "permissions": {},
+  "contributes": {
+    "actions": ["water.drank", "water.today"],
+    "trayItems": ["water.tray-today"]
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "@deskpet/plugin-water",
+  "version": "0.1.0",
+  "private": true,
+  "description": "물 마시기 알림 플러그인",
+  "type": "module",
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "typecheck": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "@deskpet/core": "workspace:*",
+    "@deskpet/plugin-sdk": "workspace:*"
+  }
+}

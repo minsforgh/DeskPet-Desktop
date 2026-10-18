@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "lines": [
+    { "id": "jungle.login-lost", "label": "로그인 만료", "kind": "alert", "variables": [], "variants": ["LMS 로그인이 풀렸어"] },
+    { "id": "jungle.no-cohort", "label": "기수 없음", "kind": "alert", "variables": [], "variants": ["활성 기수가 없어"] },
+    { "id": "jungle.check-error", "label": "출석 확인 오류", "kind": "alert", "variables": [], "variants": ["출석 상태를 확인할 수 없어"] },
+    { "id": "jungle.login-recovered", "label": "로그인 복구", "kind": "info", "variables": [], "variants": ["로그인 확인했어요. 이제 출석을 지켜볼게요"] },
+    { "id": "jungle.start-deadline", "label": "학습 시작 마감", "kind": "deadline", "variables": ["minutes"], "variants": ["학습 시작 아직이야! 10시까지 {minutes}분"] },
+    { "id": "jungle.start-grace", "label": "학습 시작 유예", "kind": "deadline", "variables": [], "variants": ["지금 누르면 아직 괜찮아!"] },
+    { "id": "jungle.end-open", "label": "학습 종료 가능", "kind": "info", "variables": [], "variants": ["이제 학습 종료 누를 수 있어"] },
+    { "id": "jungle.end-deadline", "label": "학습 종료 마감", "kind": "deadline", "variables": ["minutes"], "variants": ["04시 전에 학습 종료! {minutes}분 남았어"] },
+    { "id": "jungle.attendance-complete", "label": "출석 완료", "kind": "done", "variables": [], "variants": ["오늘도 수고했어"] },
+    { "id": "jungle.manual-login-lost", "label": "수동 확인 로그인 만료", "kind": "alert", "variables": [], "variants": ["LMS 로그인이 풀렸어"] },
+    { "id": "jungle.manual-no-cohort", "label": "수동 확인 기수 없음", "kind": "alert", "variables": [], "variants": ["활성 기수가 없어요"] },
+    { "id": "jungle.manual-error", "label": "수동 확인 오류", "kind": "alert", "variables": [], "variants": ["출석 상태를 확인할 수 없어요"] },
+    { "id": "jungle.manual-before-start", "label": "수동 확인 학습 시작 전", "kind": "deadline", "variables": ["remaining"], "variants": ["아직 학습 시작 전이에요. 10시까지 {remaining} 남았어요"] },
+    { "id": "jungle.manual-start-overdue", "label": "수동 확인 학습 시작 놓침", "kind": "alert", "variables": [], "variants": ["오늘 학습 시작을 놓쳤어요"] },
+    { "id": "jungle.manual-start-grace", "label": "수동 확인 학습 시작 유예", "kind": "deadline", "variables": [], "variants": ["학습 시작이 늦었어요! 지금 누르면 아직 괜찮아요"] },
+    { "id": "jungle.manual-studying", "label": "수동 확인 학습 중", "kind": "info", "variables": ["remaining"], "variants": ["학습 중이에요. 종료는 23시부터 누를 수 있어요({remaining} 뒤)"] },
+    { "id": "jungle.manual-end-open", "label": "수동 확인 학습 종료 가능", "kind": "deadline", "variables": ["remaining"], "variants": ["학습 종료를 누를 수 있어요. 04시까지 {remaining} 남았어요"] },
+    { "id": "jungle.manual-complete", "label": "수동 확인 출석 완료", "kind": "done", "variables": [], "variants": ["오늘 출석을 마쳤어요"] }
+  ]
+}

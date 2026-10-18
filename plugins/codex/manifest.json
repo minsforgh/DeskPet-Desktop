@@ -1,0 +1,10 @@
+{
+  "id": "codex",
+  "name": "Codex",
+  "version": "0.0.0",
+  "apiVersion": "2",
+  "entry": "dist/index.js",
+  "description": "Codex hook reaction rules.",
+  "permissions": {},
+  "contributes": { "lines": "lines.json" }
+}
