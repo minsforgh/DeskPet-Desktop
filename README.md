@@ -12,6 +12,7 @@ AI로 기능을 생성하는 것에 더해 작업 범위·승인·테스트·자
 
 | 자료 | 내용 |
 |---|---|
+| [Windows 설치 파일](https://github.com/minsforgh/DeskPet-Desktop/releases/tag/v0.1.0-preview.1) | Preview 설치본·SHA-256. 코드 서명이 없어 PC 보안 정책에 따라 실행이 제한될 수 있음 |
 | [실험 사례](docs/SHOWCASE.md) | 역할 분담, 실패 사례, 바꾼 규칙과 한계 |
 | [측정 기준선](docs/progress/m14-baseline.md) | 대상·기간·분모를 포함한 지표 |
 | [작업 방식](docs/orchestration-guide.md) · [에이전트 규칙](AGENTS.md) | 명세, 작업 분해, 검증과 통합 |
@@ -72,7 +73,7 @@ pnpm exec electron --version
 
 외부 연동 없이 펫의 표시·드래그·상호작용·설정을 시연할 수 있습니다. Orca·Slack·LMS·에이전트 hook은 각 도구·계정 설정이 필요한 선택 기능입니다.
 
-설치본은 `pnpm package`로 만들 수 있습니다. 설치 exe를 저장소에 포함하지 않았으며 공개 릴리스도 아직 업로드하지 않았습니다. [시연 안내](docs/DEMO.md)와 [설치 안내](docs/install.md)를 참고하세요.
+설치본은 [Preview Release](https://github.com/minsforgh/DeskPet-Desktop/releases/tag/v0.1.0-preview.1)에서 받을 수 있고 `pnpm package`로 직접 만들 수도 있습니다. 설치 exe는 Git 소스 이력에 포함하지 않고 릴리스 첨부 파일로 제공합니다. [시연 안내](docs/DEMO.md)와 [설치 안내](docs/install.md)를 참고하세요.
 
 ## 구현 범위와 현재 상태
 

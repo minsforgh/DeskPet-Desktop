@@ -40,4 +40,4 @@ pnpm package:check
 
 `release/`에 exe와 SHA256SUMS가 만들어집니다. `package:check`는 별도 점검용 앱을 임시 설치·실행·제거합니다. [이번 검증 상태](VALIDATION.md)와 [설치 안내](install.md)를 함께 참고하세요.
 
-설치본에는 코드 서명이 없어 PC 보안 정책에 따라 막힐 수 있습니다. 평가자에게 보안 기능 해제를 요구하기보다는 녹화·스크린샷이나 개발 환경 시연을 제공합니다. exe는 향후 GitHub Release에 별도 첨부할 수 있으며 현재 공개 다운로드 링크는 만들지 않았습니다.
+설치본에는 코드 서명이 없어 PC 보안 정책에 따라 막힐 수 있습니다. 평가자에게 보안 기능 해제를 요구하기보다는 녹화·스크린샷이나 개발 환경 시연을 제공합니다. exe와 SHA-256 파일은 [Preview Release](https://github.com/minsforgh/DeskPet-Desktop/releases/tag/v0.1.0-preview.1)에서 받을 수 있습니다.
